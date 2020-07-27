@@ -18,3 +18,17 @@
 .image:hover {
      transform: scale(1.7);
 }
+
+.btn {
+     background-color: $purple;
+     border-color: $purple !important;
+}
+
+.btn-success {
+     border-color: $purple !important;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success:visited {
+     background-color: $purple !important;
+     border-color: $purple !important;
+}

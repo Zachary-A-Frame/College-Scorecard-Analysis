@@ -17,7 +17,7 @@ export default class Visualizations extends React.Component {
                   alt="Figure 1"
                   height="325"
                   width="400"
-                  className="image"
+                  className="image img-fluid"
                 ></img>
               </div>
 
@@ -31,31 +31,35 @@ export default class Visualizations extends React.Component {
                   alt="Figure 1"
                   height="325"
                   width="400"
-                  className="image"
+                  className="image img-fluid"
                 ></img>
               </div>
             </div>
             <div className="row">
               <div className="column">
-                <h3 className="option__text">Latitude vs Cloudiness (01/05/17)</h3>
+                <h3 className="option__text">
+                  Latitude vs Cloudiness (01/05/17)
+                </h3>
 
                 <img
                   src={require("../assets/fig3.png")}
                   alt="Figure 1"
                   height="325"
                   width="400"
-                  className="image"
+                  className="image img-fluid"
                 ></img>
               </div>
               <div className="column">
-                <h3 className="option__text">Latitude vs Wind Speed (01/05/17)</h3>
+                <h3 className="option__text">
+                  Latitude vs Wind Speed (01/05/17)
+                </h3>
 
                 <img
                   src={require("../assets/fig4.png")}
                   alt="Figure 1"
                   height="325"
                   width="400"
-                  className="image"
+                  className="image img-fluid"
                 ></img>
               </div>
             </div>
