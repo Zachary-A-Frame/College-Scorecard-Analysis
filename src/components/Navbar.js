@@ -11,7 +11,7 @@ export default class Navbar extends React.Component {
           <Link to="/visualizations">Visuals</Link>
           <Link to="/Data">Data</Link>
           <Nav>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown title="Graphs" id="basic-nav-dropdown">
               <div className="dropdown-content">
                 <Link to="/Figure1" className="link">
                   Lat vs Max Temp
