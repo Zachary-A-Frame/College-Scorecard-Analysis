@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export default class Visualizations extends React.Component {
   render() {
     return (
