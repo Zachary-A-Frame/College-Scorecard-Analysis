@@ -17,6 +17,10 @@
      padding-top: 20px;
 }
 
+.sidenav a::selection {
+     background-color: $purple;
+}
+
 /* The navigation menu links */
 .sidenav a {
      padding: 6px 8px 6px 16px;

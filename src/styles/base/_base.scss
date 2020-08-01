@@ -15,3 +15,23 @@ button {
 button:disabled {
      cursor: default;
 }
+
+/* width */
+::-webkit-scrollbar {
+     width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+     background: #8357c5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+     background: #271a3b;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+     background: #4E3476;
+}

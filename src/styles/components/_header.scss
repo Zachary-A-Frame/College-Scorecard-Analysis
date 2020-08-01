@@ -10,6 +10,10 @@
      margin: 0;
 }
 
+.header__title::selection {
+     background-color: $purple;
+}
+
 .header__subtitle {
      color: $off-white;
      font-size: $m-size;
@@ -17,6 +21,10 @@
      margin: 0;
 }
 
+.header__subtitle::selection {
+     background-color: $purple;
+
+}
 @media (min-width: $desktop-breakpoint) {
      .header {
           margin-bottom: $xl-size;

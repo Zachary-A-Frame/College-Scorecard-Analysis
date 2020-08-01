@@ -22,3 +22,11 @@
      width: 100%;
      text-align: center;
 }
+
+.title::selection {
+     background-color: $purple;
+}
+
+.option__text::selection {
+     background-color: $purple;
+}

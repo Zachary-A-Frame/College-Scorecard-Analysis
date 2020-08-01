@@ -3,3 +3,7 @@
      margin: 0 auto;
      padding: 0 $m-size;
 }
+
+td::selection, th::selection {
+     background-color: $purple;
+}
