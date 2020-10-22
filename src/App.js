@@ -6,17 +6,16 @@ import Header from "./components/Header"
 import Navbar from "./components/Navbar"
 import LandingPage from "./components/LandingPage"
 import Visualizations from "./components/Visualizations"
-import Figure1 from "./components/Figure1.js"
-import Figure2 from "./components/Figure2.js"
-import Figure3 from "./components/Figure3.js"
+import MeanEarnings from "./components/MeanEarnings.js";
+import RandomForest from "./components/RandomForest.js";
+import IncomeResults from "./components/IncomeResults.js"
 import Figure4 from "./components/Figure4.js"
-import Api from "./components/Api.js"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Data from "./components/Data"
 
 function App() {
-  const subtitle = "An Analysis by Zach Frame"
+  const subtitle = "Final Project"
 
   return (
     <Router>
@@ -27,10 +26,9 @@ function App() {
         <Route path="/web-design-challenge" component={LandingPage} />
         <Route path="/visualizations" component={Visualizations} />
         <Route path="/data" component={Data} />
-        <Route path="/apiData" component={Api} />
-        <Route path="/figure1" component={Figure1} />
-        <Route path="/figure2" component={Figure2} />
-        <Route path="/figure3" component={Figure3} />
+        <Route path="/MeanEarnings" component={MeanEarnings} />
+        <Route path="/RandomForest" component={RandomForest} />
+        <Route path="/Income" component={IncomeResults} />
         <Route path="/figure4" component={Figure4} />
       </Switch>
     </Router>

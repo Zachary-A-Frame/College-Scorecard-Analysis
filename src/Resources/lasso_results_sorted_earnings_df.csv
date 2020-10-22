@@ -1,0 +1,31 @@
+,VARIABLE_NAME,coefficient,abs(coef_),description,long_name
+199,INEXPFTE,22546.292038279535,22546.292038279535,Instructional expenditures per full-time equivalent student,instructional_expenditure_per_fte
+186,AVGFACSAL,21661.373715176625,21661.373715176625,Average faculty salary,faculty_salary
+42,PCIP26,17150.52513616945,17150.52513616945,Percentage of degrees awarded in Biological And Biomedical Sciences.,program_percentage.biological
+153,NUM41_PRIV,-15778.381223940774,15778.381223940774,"Number of Title IV students, $0-$30,000 family income (private for-profit and nonprofit institutions)",title_iv.private.by_income_level.0-30000
+50,PCIP14,15215.305401734071,15215.305401734071,Percentage of degrees awarded in Engineering.,program_percentage.engineering
+75,PCIP49,15032.907713550478,15032.907713550478,Percentage of degrees awarded in Transportation And Materials Moving.,program_percentage.transportation
+108,WDRAW_ORIG_YR2_RT,-13946.884762191126,13946.884762191126,Percent withdrawn from original institution within 2 years,title_iv.withdrawn_by.2yrs
+64,PCIP03,-13296.58271562587,13296.58271562587,Percentage of degrees awarded in Natural Resources And Conservation.,program_percentage.resources
+61,PCIP47,11571.435547155977,11571.435547155977,Percentage of degrees awarded in Mechanic And Repair Technologies/Technicians.,program_percentage.mechanic_repair_technology
+54,PCIP51,11035.39152672997,11035.39152672997,Percentage of degrees awarded in Health Professions And Related Programs.,program_percentage.health
+169,NUM44_PRIV,-9326.352610663454,9326.352610663454,"Number of Title IV students, $75,001-$110,000 family income (private for-profit and nonprofit institutions)",title_iv.private.by_income_level.75001-110000
+157,NUM45_PRIV,7138.450773626772,7138.450773626772,"Number of Title IV students, $110,000+ family income (private for-profit and nonprofit institutions)",title_iv.private.by_income_level.110001-plus
+238,MARRIED,-6814.946221108946,6814.946221108946,Share of married students,demographics.married
+210,INC_PCT_M2,6738.153060817197,6738.153060817197,"Aided students with family incomes between $48,001-$75,000 in nominal dollars",share_middleincome.48001_75000
+45,PCIP10,6373.922536031401,6373.922536031401,Percentage of degrees awarded in Communications Technologies/Technicians And Support Services.,program_percentage.communications_technology
+43,PCIP52,5745.18681579178,5745.18681579178,"Percentage of degrees awarded in Business, Management, Marketing, And Related Support Services.",program_percentage.business_marketing
+149,NUM4_PRIV,5281.388314341453,5281.388314341453,Number of Title IV students (private for-profit and nonprofit institutions),title_iv.private.all
+112,NPT41_PRIV,-5225.846180386055,5225.846180386055,"Average net price for $0-$30,000 family income (private for-profit and nonprofit institutions)",net_price.private.by_income_level.0-30000
+68,PCIP40,-4678.516411756923,4678.516411756923,Percentage of degrees awarded in Physical Sciences.,program_percentage.physical_science
+224,SCUGFFN_POOLED,-4325.351843181012,4325.351843181012,"Number of full-time, first-time degree/certificate-seeking undergraduate students (denominator for percent full-time, first-time degree/certificate-seeking undergraduates receiving a pell grant or federal student loan), pooled in rolling averages",ftft_undergrads_with_pell_grant_or_federal_student_loan_pooled
+202,TUITFTE,4187.088099669375,4187.088099669375,Net tuition revenue per full-time equivalent student,tuition_revenue_per_fte
+72,PCIP41,3421.5484140794733,3421.5484140794733,Percentage of degrees awarded in Science Technologies/Technicians.,program_percentage.science_technology
+124,NPT42_PRIV,2308.086952412046,2308.086952412046,"Average net price for $30,001-$48,000 family income (private for-profit and nonprofit institutions)",net_price.private.by_income_level.30001-48000
+234,POVERTY_RATE,-2156.3476193662905,2156.3476193662905,"Poverty rate, via Census data",demographics.poverty_rate
+195,DISTANCEONLY,1648.7873902064716,1648.7873902064716,Flag for distance-education-only education,online_only
+227,PCT_ASIAN,1631.9913833190167,1631.9913833190167,"Percent of the population from students' zip codes that is Asian, via Census data",demographics.share_asian.home_ZIP
+145,NPT4_PRIV,-1305.9838994521288,1305.9838994521288,Average net price for Title IV institutions (private for-profit and nonprofit institutions),avg_net_price.private
+171,NUM44_PUB,-1227.423673563319,1227.423673563319,"Number of Title IV students, $75,001-$110,000 family income (public institutions)",title_iv.public.by_income_level.75001-110000
+159,NUM45_PUB,1144.691573380783,1144.691573380783,"Number of Title IV students, $110,000+ family income (public institutions)",title_iv.public.by_income_level.110001-plus
+69,PCIP48,430.8677096417624,430.8677096417624,Percentage of degrees awarded in Precision Production.,program_percentage.precision_production

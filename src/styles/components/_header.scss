@@ -1,8 +1,11 @@
 .header {
+     margin: auto;
      background: $off-black;
      color: white;
      margin-bottom: $m-size;
      padding: $m-size 0;
+     background-image: url(https://images.forbes.com/Landers/Images/Desktop/Leadership/Leadership_Education.png);
+     color: black;
 }
 
 .header__title {
@@ -10,12 +13,10 @@
      margin: 0;
 }
 
-.header__title::selection {
-     background-color: $purple;
-}
 
 .header__subtitle {
-     color: $off-white;
+     color: black;
+     // color: $off-white;
      font-size: $m-size;
      font-weight: 500;
      margin: 0;
@@ -23,8 +24,8 @@
 
 .header__subtitle::selection {
      background-color: $purple;
-
 }
+
 @media (min-width: $desktop-breakpoint) {
      .header {
           margin-bottom: $xl-size;

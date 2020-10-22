@@ -5,28 +5,28 @@
      /* Set the width of the sidebar */
      position: fixed;
      /* Fixed Sidebar (stay in place on scroll) */
-     z-index: 1;
+     // z-index: 1;
      /* Stay on top */
      top: 0;
      /* Stay at the top */
      left: 0;
-     background-color: $off-black;
+     margin-right: 10px;
+     background-color: #a51c30;
+;
      /* Black */
-     overflow-x: hidden;
+     // overflow-x: hidden;
      /* Disable horizontal scroll */
      padding-top: 20px;
 }
 
-.sidenav a::selection {
-     background-color: $purple;
-}
+
 
 /* The navigation menu links */
 .sidenav a {
      padding: 6px 8px 6px 16px;
      text-decoration: none;
      font-size: 25px;
-     color: #818181;
+     color: white;
      display: block;
 }
 

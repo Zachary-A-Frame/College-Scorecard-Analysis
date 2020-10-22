@@ -4,30 +4,44 @@ const Header = (props) => (
   <div>
     <div className="container">
       <div className="option">
-        <h2 className="title">Summary: Latitude vs. X</h2>
-        <img
+        <h2 className="title">Summary Page</h2>
+        {/* <img
           src={require("../assets/fig1.png")}
           alt="Figure 1"
           height="325"
           width="400"
           className="image"
-        ></img>
+        ></img> */}
         <p className="option__text">
-          The purpose of this project was to analyze how weather changes as you
-          get closer to the equator. To accomplish this analysis, we first
-          pulled data from the OpenWeatherMap API to assemble a dataset on over
-          500 cities.
+          As the cost of a college education continues to rise many families are
+          asking “is it worth it” to attend college? We dig a little deeper by
+          asking more specific questions such as;
         </p>
         <br></br>
         <p className="option__text">
-          After assembling the dataset, we used MatPlotLib to plot various
-          aspects of the weather vs. latitude. Factors we looked at included:
-          temperature, cloudiness, wind speed, and humidity. This site provides
-          the source data and visualizations created as part of the analysis, as
-          well as the explanations and descriptions of any trends and
-          correlations witnessed.
+          <ul>
+            <li>
+              What factors are most important in determining the highest
+              starting income in the first two years after graduating college?
+            </li>
+            <li>
+              What factors are the most important in determining the highest
+              starting income based on major selection?
+            </li>
+            <li>
+              What factors are most prevalent that determine the highest amount
+              of debt and highest chance of defaulting on student loans?
+            </li>
+            <li>
+              How accurate are popular college rankings such as the Forbes
+              College Rankings list?
+            </li>
+          </ul>
         </p>
       </div>
+      <br></br>
+      <h3>To select which models to run we utilized the following guide.</h3>
+      <img src={require("../assets/ml-mapOnHomepage.png")} id="ml-map" alt="ml-map" />
     </div>
   </div>
 );

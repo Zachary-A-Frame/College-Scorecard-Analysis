@@ -1,0 +1,24 @@
+id,VARIABLE NAME,importance,developer-friendly-name,NAME OF DATA ELEMENT
+0,WDRAW_ORIG_YR2_RT,0.33522776619399347,title_iv.withdrawn_by.2yrs,"108    Percent withdrawn from original institution wi...
+Name: NAME OF DATA ELEMENT, dtype: object"
+1,TUITFTE,0.11220941858023022,tuition_revenue_per_fte,"203    Net tuition revenue per full-time equivalent s...
+Name: NAME OF DATA ELEMENT, dtype: object"
+2,PCIP51,0.09141163020287281,program_percentage.health,"54    Percentage of degrees awarded in Health Profes...
+Name: NAME OF DATA ELEMENT, dtype: object"
+3,MARRIED,0.07713876539017006,demographics.married,"239    Share of married students
+Name: NAME OF DATA ELEMENT, dtype: object"
+4,PCIP50,0.06334198959290263,program_percentage.visual_performing,"76    Percentage of degrees awarded in Visual And Pe...
+Name: NAME OF DATA ELEMENT, dtype: object"
+5,SAT_AVG_ALL,0.06304269679490501,sat_scores.average.by_ope_id,"94    Average SAT equivalent score of students admit...
+Name: NAME OF DATA ELEMENT, dtype: object"
+6,UGDS,0.05644540020803969,size,"221    Enrollment of undergraduate certificate/degree...
+Name: NAME OF DATA ELEMENT, dtype: object"
+7,DEPENDENT,0.05446367613749309,demographics.dependent,"236    Share of dependent students
+Name: NAME OF DATA ELEMENT, dtype: object"
+8,SATMT25,0.05388399800392126,sat_scores.25th_percentile.math,"78    25th percentile of SAT scores at the instituti...
+Name: NAME OF DATA ELEMENT, dtype: object"
+9,PCIP14,0.05309461760723638,program_percentage.engineering,"50    Percentage of degrees awarded in Engineering.
+Name: NAME OF DATA ELEMENT, dtype: object"
+10,FIRST_GEN,0.03974004128823523,demographics.first_generation,"238    Share of first-generation students
+Name: NAME OF DATA ELEMENT, dtype: object"
+0,model_score =0.8284596164700644,,,

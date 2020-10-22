@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { NavDropdown, Nav } from "react-bootstrap";
+// import { NavDropdown, Nav } from "react-bootstrap";
 
 export default class Navbar extends React.Component {
   render() {
@@ -8,9 +8,9 @@ export default class Navbar extends React.Component {
       <nav>
         <div className="sidenav">
           <Link to="/">Home</Link>
-          <Link to="/visualizations">Visuals</Link>
-          <Link to="/Data">Data</Link>
-          <Nav>
+          <Link to="/visualizations">Models</Link>
+          <Link to="/Income">Income Results</Link>
+          {/* <Nav>
             <NavDropdown title="Graphs" id="basic-nav-dropdown">
               <div className="dropdown-content">
                 <Link to="/Figure1" className="link">
@@ -21,8 +21,9 @@ export default class Navbar extends React.Component {
                 <Link to="/Figure4">Lat vs Wind Speed</Link>
               </div>
             </NavDropdown>
-          </Nav>
+          </Nav> */}
           {/* <Link to={"/"}>Contact</Link> */}
+          <Link to="/Data">Data</Link>
         </div>
       </nav>
     );

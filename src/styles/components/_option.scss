@@ -1,32 +1,26 @@
 .option {
-     border-bottom: 1px solid lighten($light-blue, 10%);
+     border: 5px solid lighten($light-blue, 10%);
      padding: $l-size $m-size;
 }
 
 .option__text {
-     color: white;
+     // color: white;
      font-weight: 500;
      font-size: 2rem;
      margin: 0;
 }
 
 .title {
-     background: $purple;
+     background: #a51c30;
      border: none;
-     border-bottom: .6rem solid darken($purple, 10%);
-     color: white;
+     border-bottom: .6rem solid darken(#a51c30, 10%);
+     // color: white;
      font-weight: bold;
      font-size: $l-size;
      margin-bottom: $m-size;
      padding: 2.4rem;
      width: 100%;
      text-align: center;
+     color: white;
 }
 
-.title::selection {
-     background-color: $purple;
-}
-
-.option__text::selection {
-     background-color: $purple;
-}
