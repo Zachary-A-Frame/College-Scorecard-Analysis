@@ -12,9 +12,9 @@ import IncomeResults from "./components/IncomeResults.js"
 import MajorResults from "./components/MajorResults.js"
 import DebtResults from "./components/DebtResults.js"
 import ForbesRanking from "./components/ForbesRanking.js"
+import Data from "./components/Data";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import Data from "./components/Data"
 
 function App() {
   const subtitle = "Final Project"
@@ -25,7 +25,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" component={LandingPage} exact />
-        <Route path="/web-design-challenge" component={LandingPage} />
+        <Route path="/Main" component={LandingPage} />
         <Route path="/visualizations" component={Visualizations} />
         <Route path="/data" component={Data} />
         <Route path="/MeanEarnings" component={MeanEarnings} />
