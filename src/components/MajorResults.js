@@ -1,29 +1,29 @@
-import React from "react"
-import MeanEarnings from "./MeanEarnings.js"
-import RandomForest from "./RandomForest.js"
+import React from "react";
+import MeanEarnings from "./MeanEarnings.js";
+import RandomForest from "./RandomForest.js";
 
-import * as d3 from "d3"
+import * as d3 from "d3";
 
-import data from "../Resources/lasso_results_sorted_earnings_df.csv"
-import elasticData from "../Resources/elasticnet_results_sorted_earnings_df.csv"
+import data from "../Resources/lasso_results_sorted_earnings_df.csv";
+import elasticData from "../Resources/elasticnet_results_sorted_earnings_df.csv";
 
-import Plotly from "plotly.js"
-import createPlotlyComponent from "react-plotly.js/factory"
+import Plotly from "plotly.js";
+import createPlotlyComponent from "react-plotly.js/factory";
 
-const Plot = createPlotlyComponent(Plotly)
+const Plot = createPlotlyComponent(Plotly);
 
-let xValues = []
-let yValues = []
+let xValues = [];
+let yValues = [];
 
-let elasticX = []
-let elasticY = []
+let elasticX = [];
+let elasticY = [];
 
 let incomeRegressionCsv = () => {
-     d3.csv(data, function (data) {
-          xValues.push(data.VARIABLE_NAME)
-          yValues.push(+data.coefficient)
-     })
-     return [xValues, yValues]
+  d3.csv(data, function (data) {
+    xValues.push(data.VARIABLE_NAME);
+    yValues.push(+data.coefficient);
+  });
+  return [xValues, yValues];
 };
 
 let elasticnetCsv = () => {
@@ -34,45 +34,58 @@ let elasticnetCsv = () => {
   return [elasticX, elasticY];
 };
 
-incomeRegressionCsv()
-elasticnetCsv()
+incomeRegressionCsv();
+elasticnetCsv();
 
-
-export default class Income extends React.Component {
-     state = {
-          data: [{ x: xValues, y: yValues, type: "bar", mode: "lines+markers", marker: { color: "#a51c30" } }],
-          layout: {
-               width: 720,
-               height: 400,
-               title: "Lasso Regression Model",
-          },
-          elasticData: [{ x: elasticX, y: elasticY, type: "bar", mode: "lines+markers", marker: { color: "#a51c30" } }],
-          elasticLayout: {
-               width: 720,
-               height: 400,
-               title: "Elastic Net Regression Model",
-          }
-}
+export default class Major extends React.Component {
+  state = {
+    data: [
+      {
+        x: xValues,
+        y: yValues,
+        type: "bar",
+        mode: "lines+markers",
+        marker: { color: "#a51c30" },
+      },
+    ],
+    layout: {
+      width: 720,
+      height: 400,
+      title: "Lasso Regression Model",
+    },
+    elasticData: [
+      {
+        x: elasticX,
+        y: elasticY,
+        type: "bar",
+        mode: "lines+markers",
+        marker: { color: "#a51c30" },
+      },
+    ],
+    elasticLayout: {
+      width: 720,
+      height: 400,
+      title: "Elastic Net Regression Model",
+    },
+  };
 
   incomeRegressionCsv = () => {
+    d3.csv(data, function (data) {
+      xValues.push(data.VARIABLE_NAME);
+      yValues.push(+data.coefficient);
+    });
 
+    console.log(xValues, yValues);
+    this.setState({ xValues, yValues });
+  };
 
-     d3.csv(data, function (data) {
-          xValues.push(data.VARIABLE_NAME)
-          yValues.push(+data.coefficient)
-     })
-
-     console.log(xValues, yValues)
-     this.setState({xValues, yValues});
-     };
-
-     elasticnetCsv = () => {
-          d3.csv(data, function (data) {
-               elasticX.push(data.VARIABLE_NAME)
-               elasticY.push(+data.coefficient)
-          })
-     this.setState({elasticX, elasticY})
-     }
+  elasticnetCsv = () => {
+    d3.csv(data, function (data) {
+      elasticX.push(data.VARIABLE_NAME);
+      elasticY.push(+data.coefficient);
+    });
+    this.setState({ elasticX, elasticY });
+  };
 
   render() {
     return (
@@ -137,7 +150,7 @@ export default class Income extends React.Component {
             />
             <Plot data={this.state.data} layout={this.state.layout} />
             <Plot data={this.state.elasticData} layout={this.state.layout} />
-          <br></br>
+            <br></br>
             <table class="table">
               <thead>
                 <tr>

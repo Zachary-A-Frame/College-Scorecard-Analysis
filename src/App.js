@@ -9,7 +9,7 @@ import Visualizations from "./components/Visualizations"
 import MeanEarnings from "./components/MeanEarnings.js";
 import RandomForest from "./components/RandomForest.js";
 import IncomeResults from "./components/IncomeResults.js"
-import Figure4 from "./components/Figure4.js"
+import MajorResults from "./components/MajorResults.js"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Data from "./components/Data"
@@ -29,7 +29,7 @@ function App() {
         <Route path="/MeanEarnings" component={MeanEarnings} />
         <Route path="/RandomForest" component={RandomForest} />
         <Route path="/Income" component={IncomeResults} />
-        <Route path="/figure4" component={Figure4} />
+        <Route path="/Major" component={MajorResults} />
       </Switch>
     </Router>
   );

@@ -10,6 +10,7 @@ export default class Navbar extends React.Component {
           <Link to="/">Home</Link>
           <Link to="/visualizations">Models</Link>
           <Link to="/Income">Income Results</Link>
+          <Link to="/Major">Major Results</Link>
           {/* <Nav>
             <NavDropdown title="Graphs" id="basic-nav-dropdown">
               <div className="dropdown-content">
