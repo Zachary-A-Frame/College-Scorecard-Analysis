@@ -11,6 +11,8 @@ export default class Navbar extends React.Component {
           <Link to="/visualizations">Models</Link>
           <Link to="/Income">Income Results</Link>
           <Link to="/Major">Major Results</Link>
+          <Link to="/Debt">Debt Results</Link>
+          <Link to="/ForbesRanking">Forbes Ranking Results</Link>
           {/* <Nav>
             <NavDropdown title="Graphs" id="basic-nav-dropdown">
               <div className="dropdown-content">

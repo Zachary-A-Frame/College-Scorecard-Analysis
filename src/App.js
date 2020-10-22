@@ -1,15 +1,17 @@
-import React from "react";
-import "./App.css";
+import React from "react"
+import "./App.css"
 import "./styles/styles.scss"
 
 import Header from "./components/Header"
 import Navbar from "./components/Navbar"
 import LandingPage from "./components/LandingPage"
 import Visualizations from "./components/Visualizations"
-import MeanEarnings from "./components/MeanEarnings.js";
-import RandomForest from "./components/RandomForest.js";
+import MeanEarnings from "./components/MeanEarnings.js"
+import RandomForest from "./components/RandomForest.js"
 import IncomeResults from "./components/IncomeResults.js"
 import MajorResults from "./components/MajorResults.js"
+import DebtResults from "./components/DebtResults.js"
+import ForbesRanking from "./components/ForbesRanking.js"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Data from "./components/Data"
@@ -30,9 +32,11 @@ function App() {
         <Route path="/RandomForest" component={RandomForest} />
         <Route path="/Income" component={IncomeResults} />
         <Route path="/Major" component={MajorResults} />
+        <Route path="/Debt" component={DebtResults} />
+        <Route path="/ForbesRanking" component={ForbesRanking} />
       </Switch>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

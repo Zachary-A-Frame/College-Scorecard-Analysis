@@ -1,0 +1,31 @@
+,VARIABLE_NAME,coefficient,abs(coef_),description,long_name
+39,PCIP04,16603.755514153185,16603.755514153185,Percentage of degrees awarded in Architecture And Related Services.,program_percentage.architecture
+119,TUITFTE,8509.568660304256,8509.568660304256,Net tuition revenue per full-time equivalent student,tuition_revenue_per_fte
+117,INEXPFTE,-8371.52629082075,8371.52629082075,Instructional expenditures per full-time equivalent student,instructional_expenditure_per_fte
+106,WDRAW_ORIG_YR2_RT,-8361.168029874114,8361.168029874114,Percent withdrawn from original institution within 2 years,title_iv.withdrawn_by.2yrs
+124,MD_FAMINC,6010.198934770735,6010.198934770735,Median family income in real 2015 dollars,demographics.median_family_income
+40,PCIP05,-4532.261303728136,4532.261303728136,"Percentage of degrees awarded in Area, Ethnic, Cultural, Gender, And Group Studies.",program_percentage.ethnic_cultural_gender
+108,WDRAW_ORIG_YR8_RT,3561.429948071544,3561.429948071544,Percent withdrawn from original institution within 8 years,title_iv.withdrawn_by.8yrs
+110,TUITIONFEE_IN,3199.3481343205426,3199.3481343205426,In-state tuition and fees,tuition.in_state
+62,PCIP30,-2771.8188790779386,2771.8188790779386,Percentage of degrees awarded in Multi/Interdisciplinary Studies.,program_percentage.multidiscipline
+90,COMP_ORIG_YR8_RT,2365.6472492070466,2365.6472492070466,Percent completed within 8 years at original institution,title_iv.completed_by.8yrs
+38,PCIP01,-2185.7562916793167,2185.7562916793167,"Percentage of degrees awarded in Agriculture, Agriculture Operations, And Related Sciences.",program_percentage.agriculture
+64,PCIP31,-1595.6386504146062,1595.6386504146062,"Percentage of degrees awarded in Parks, Recreation, Leisure, And Fitness Studies.",program_percentage.parks_recreation_fitness
+70,PCIP44,1550.9518505610597,1550.9518505610597,Percentage of degrees awarded in Public Administration And Social Service Professions.,program_percentage.public_administration_social_service
+115,MENONLY,-1481.2219130689398,1481.2219130689398,Flag for men-only college,men_only
+133,UGDS_HISP,-1473.0455034990557,1473.0455034990557,Total share of enrollment of undergraduate degree-seeking students who are Hispanic,demographics.race_ethnicity.hispanic
+122,AGE_ENTRY,1320.2300404520395,1320.2300404520395,Average age of entry,demographics.age_entry
+98,LO_INC_COMP_ORIG_YR8_RT,1219.3242697746568,1219.3242697746568,"Percent of low-income (less than $30,000 in nominal family income) students who completed within 8 years at original institution",title_iv.low_inc.completed_by.8yrs
+52,PCIP16,-1200.6439641880127,1200.6439641880127,"Percentage of degrees awarded in Foreign Languages, Literatures, And Linguistics.",program_percentage.language
+92,FEMALE_COMP_ORIG_YR8_RT,-948.6472826793278,948.6472826793278,Percent of female students who completed within 8 years at original institution,title_iv.female.completed_by.8yrs
+116,WOMENONLY,801.5610230340448,801.5610230340448,Flag for women-only college,women_only
+81,HI_INC_YR8_N,601.7616653474985,601.7616653474985,"Number of high-income (above $75,000 in nominal family income) students in overall 8-year completion cohort",8_yr_completion.high_income
+47,PCIP13,568.7579178928077,568.7579178928077,Percentage of degrees awarded in Education.,program_percentage.education
+126,AGEGE24,546.8954110085692,546.8954110085692,Percent of students over 23 at entry,demographics.over_23_at_entry
+128,FEMALE,-447.2491075354418,447.2491075354418,Share of female students,demographics.female_share
+129,MARRIED,431.0615485834836,431.0615485834836,Share of married students,demographics.married
+114,AVGFACSAL,-404.0912506288968,404.0912506288968,Average faculty salary,faculty_salary
+134,UGDS_MEN,-302.89732883147485,302.89732883147485,Total share of enrollment of undergraduate degree-seeking students who are men,demographics.men
+8,CIP46BACHL,-0.0,0.0,Bachelor's degree in Construction Trades.,program.bachelors.construction
+20,CIP25BACHL,0.0,0.0,Bachelor's degree in Library Science.,program.bachelors.library
+66,PCIP38,0.0,0.0,Percentage of degrees awarded in Philosophy And Religious Studies.,program_percentage.philosophy_religious

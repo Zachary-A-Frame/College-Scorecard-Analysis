@@ -91,7 +91,11 @@ export default class Income extends React.Component {
             </h3>
             <MeanEarnings className="visualizations"></MeanEarnings>
             <hr></hr>
-            <h3 style={{ textAlign: "center" }}>Random Forest Regressor</h3>
+            <h3 className="option__text" style={{ textAlign: "center" }}>
+              <a href="http://localhost:3000/web-design-challenge/static/media/random_forest_summary_earnings_tree.0001efa3.png">
+                Random Forest Forbes Tree
+              </a>
+            </h3>
             <RandomForest
               style={{ width: "100%", height: "100%" }}
             ></RandomForest>
@@ -136,8 +140,11 @@ export default class Income extends React.Component {
               }}
             />
             <Plot data={this.state.data} layout={this.state.layout} />
-            <Plot data={this.state.elasticData} layout={this.state.layout} />
-          <br></br>
+            <Plot
+              data={this.state.elasticData}
+              layout={this.state.elasticLayout}
+            />
+            <br></br>
             <table class="table">
               <thead>
                 <tr>
@@ -154,7 +161,7 @@ export default class Income extends React.Component {
                   <th scope="row">Earnings</th>
                   <td>Random Forest Regression</td>
                   <td>0.828</td>
-                  <td>@n/a</td>
+                  <td>n/a</td>
                   <td>0.8077</td>
                   <td>10</td>
                 </tr>

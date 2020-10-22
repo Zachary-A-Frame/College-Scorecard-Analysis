@@ -1,0 +1,31 @@
+,VARIABLE_NAME,coefficient,abs(coef_),description,long_name
+34,PCIP45,236035.01569070175,236035.01569070175,Percentage of degrees awarded in Social Sciences.,program_percentage.social_science
+11,PCIP14,165624.13786235085,165624.13786235085,Percentage of degrees awarded in Engineering.,program_percentage.engineering
+8,PCIP46,-133302.9473334562,133302.9473334562,Percentage of degrees awarded in Construction Trades.,program_percentage.construction
+21,PCIP27,107400.16233313059,107400.16233313059,Percentage of degrees awarded in Mathematics And Statistics.,program_percentage.mathematics
+36,PCIP49,99674.89112904148,99674.89112904148,Percentage of degrees awarded in Transportation And Materials Moving.,program_percentage.transportation
+32,PCIP44,-82936.94384032644,82936.94384032644,Percentage of degrees awarded in Public Administration And Social Service Professions.,program_percentage.public_administration_social_service
+26,PCIP31,-73655.75742084823,73655.75742084823,"Percentage of degrees awarded in Parks, Recreation, Leisure, And Fitness Studies.",program_percentage.parks_recreation_fitness
+35,PCIP39,-72426.59739926214,72426.59739926214,Percentage of degrees awarded in Theology And Religious Vocations.,program_percentage.theology_religious_vocation
+0,PCIP01,-70571.85271849726,70571.85271849726,"Percentage of degrees awarded in Agriculture, Agriculture Operations, And Related Sciences.",program_percentage.agriculture
+9,PCIP13,-60433.41572413207,60433.41572413207,Percentage of degrees awarded in Education.,program_percentage.education
+15,PCIP51,60161.98714686651,60161.98714686651,Percentage of degrees awarded in Health Professions And Related Programs.,program_percentage.health
+20,PCIP25,-59488.147066150814,59488.147066150814,Percentage of degrees awarded in Library Science.,program_percentage.library
+17,PCIP43,-57130.33510146673,57130.33510146673,"Percentage of degrees awarded in Homeland Security, Law Enforcement, Firefighting And Related Protective Services.",program_percentage.security_law_enforcement
+3,PCIP26,52691.12085415932,52691.12085415932,Percentage of degrees awarded in Biological And Biomedical Sciences.,program_percentage.biological
+27,PCIP12,-49895.397771171454,49895.397771171454,Percentage of degrees awarded in Personal And Culinary Services.,program_percentage.personal_culinary
+31,PCIP42,-49202.60273605613,49202.60273605613,Percentage of degrees awarded in Psychology.,program_percentage.psychology
+22,PCIP47,48397.31251793573,48397.31251793573,Percentage of degrees awarded in Mechanic And Repair Technologies/Technicians.,program_percentage.mechanic_repair_technology
+37,PCIP50,-44801.59200395797,44801.59200395797,Percentage of degrees awarded in Visual And Performing Arts.,program_percentage.visual_performing
+25,PCIP03,-39128.55757473492,39128.55757473492,Percentage of degrees awarded in Natural Resources And Conservation.,program_percentage.resources
+12,PCIP23,-38621.15272190572,38621.15272190572,Percentage of degrees awarded in English Language And Literature/Letters.,program_percentage.english
+19,PCIP24,-34222.71824783607,34222.71824783607,"Percentage of degrees awarded in Liberal Arts And Sciences, General Studies And Humanities.",program_percentage.humanities
+23,PCIP29,30133.72138327407,30133.72138327407,Percentage of degrees awarded in Military Technologies And Applied Sciences.,program_percentage.military
+18,PCIP22,-29210.565458784247,29210.565458784247,Percentage of degrees awarded in Legal Professions And Studies.,program_percentage.legal
+28,PCIP38,20170.36214794953,20170.36214794953,Percentage of degrees awarded in Philosophy And Religious Studies.,program_percentage.philosophy_religious
+1,PCIP04,18520.818578809016,18520.818578809016,Percentage of degrees awarded in Architecture And Related Services.,program_percentage.architecture
+10,PCIP15,-13561.81100465874,13561.81100465874,Percentage of degrees awarded in Engineering Technologies And Engineering-Related Fields.,program_percentage.engineering_technology
+29,PCIP40,-13218.204675105164,13218.204675105164,Percentage of degrees awarded in Physical Sciences.,program_percentage.physical_science
+24,PCIP30,9662.49011763136,9662.49011763136,Percentage of degrees awarded in Multi/Interdisciplinary Studies.,program_percentage.multidiscipline
+14,PCIP16,2542.7183173918124,2542.7183173918124,"Percentage of degrees awarded in Foreign Languages, Literatures, And Linguistics.",program_percentage.language
+33,PCIP41,-872.8260862728242,872.8260862728242,Percentage of degrees awarded in Science Technologies/Technicians.,program_percentage.science_technology
