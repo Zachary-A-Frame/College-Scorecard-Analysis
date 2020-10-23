@@ -4,9 +4,12 @@ import data from "../Resources/random_forest_summary_forbes_df.csv";
 
 import * as d3 from "d3";
 
-// import Plotly from "plotly.js";
+import Plotly from "plotly.js";
 // import createPlotlyComponent from "react-plotly.js/factory";
-
+import importScript from "./script.js";
+importScript(
+  "https://unpkg.com/react-plotly.js@1.0.2/dist/create-plotly-component.js"
+);
 const Plot = createPlotlyComponent(Plotly);
 
 let xValues = [];
