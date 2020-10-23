@@ -1,0 +1,33 @@
+,VARIABLE_NAME,importance,NAME OF DATA ELEMENT,developer-friendly-name
+0,SAT Lower,0.06253672203301944,"Series([], Name: NAME OF DATA ELEMENT, dtype: object)",[]
+1,Alumni Salary,0.05369595499324241,"Series([], Name: NAME OF DATA ELEMENT, dtype: object)",[]
+2,ACT Lower,0.05284528619818387,"Series([], Name: NAME OF DATA ELEMENT, dtype: object)",[]
+3,INEXPFTE,0.04914680306964391,"337    Instructional expenditures per full-time equiv...
+Name: NAME OF DATA ELEMENT, dtype: object",['instructional_expenditure_per_fte']
+4,SAT Upper,0.04378397548954373,"Series([], Name: NAME OF DATA ELEMENT, dtype: object)",[]
+5,ACT Upper,0.04287279046783276,"Series([], Name: NAME OF DATA ELEMENT, dtype: object)",[]
+6,Total Annual Cost,0.04251518900237057,"Series([], Name: NAME OF DATA ELEMENT, dtype: object)",[]
+7,Acceptance Rate,0.034758829201168046,"Series([], Name: NAME OF DATA ELEMENT, dtype: object)",[]
+8,TUITFTE,0.031103715712517983,"340    Net tuition revenue per full-time equivalent s...
+Name: NAME OF DATA ELEMENT, dtype: object",['tuition_revenue_per_fte']
+9,PCTFLOAN,0.030217554364354686,"102    Percent of all undergraduate students receivin...
+Name: NAME OF DATA ELEMENT, dtype: object",['federal_loan_rate']
+10,CCUGPROF,0.022599005099774753,"325    Carnegie Classification -- undergraduate profile
+Name: NAME OF DATA ELEMENT, dtype: object",['carnegie_undergrad']
+11,Average Grant Aid,0.021565388350303354,"Series([], Name: NAME OF DATA ELEMENT, dtype: object)",[]
+12,UGDS_ASIAN,0.02148656842732181,"390    Total share of enrollment of undergraduate deg...
+Name: NAME OF DATA ELEMENT, dtype: object",['demographics.race_ethnicity.asian']
+13,Net Price,0.021460539207129786,"Series([], Name: NAME OF DATA ELEMENT, dtype: object)",[]
+14,UGDS_BLACK,0.019007560902599224,"392    Total share of enrollment of undergraduate deg...
+Name: NAME OF DATA ELEMENT, dtype: object",['demographics.race_ethnicity.black']
+15,UGDS_NRA,0.01768175476546921,"397    Total share of enrollment of undergraduate deg...
+Name: NAME OF DATA ELEMENT, dtype: object",['demographics.race_ethnicity.non_resident_alien']
+16,PCIP52,0.01759482885531081,"43    Percentage of degrees awarded in Business, Man...
+Name: NAME OF DATA ELEMENT, dtype: object",['program_percentage.business_marketing']
+17,PCIP45,0.017040707729938192,"73    Percentage of degrees awarded in Social Sciences.
+Name: NAME OF DATA ELEMENT, dtype: object",['program_percentage.social_science']
+18,PCIP27,0.0158653126924749,"60    Percentage of degrees awarded in Mathematics A...
+Name: NAME OF DATA ELEMENT, dtype: object",['program_percentage.mathematics']
+19,SCUGFFN_POOLED,0.014559649246999084,"365    Number of full-time, first-time degree/certifi...
+Name: NAME OF DATA ELEMENT, dtype: object",['ftft_undergrads_with_pell_grant_or_federal_student_loan_pooled']
+0,model_score =0.5572916666666666,,,

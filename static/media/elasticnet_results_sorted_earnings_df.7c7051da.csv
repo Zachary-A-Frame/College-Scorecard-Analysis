@@ -1,0 +1,31 @@
+,VARIABLE_NAME,coefficient,abs(coef_),description,long_name
+186,AVGFACSAL,16516.893941915936,16516.893941915936,Average faculty salary,faculty_salary
+199,INEXPFTE,13182.780578718977,13182.780578718977,Instructional expenditures per full-time equivalent student,instructional_expenditure_per_fte
+50,PCIP14,11269.496235825502,11269.496235825502,Percentage of degrees awarded in Engineering.,program_percentage.engineering
+108,WDRAW_ORIG_YR2_RT,-10528.490344752972,10528.490344752972,Percent withdrawn from original institution within 2 years,title_iv.withdrawn_by.2yrs
+54,PCIP51,7900.437098626106,7900.437098626106,Percentage of degrees awarded in Health Professions And Related Programs.,program_percentage.health
+204,SCH_DEG,7843.439963636552,7843.439963636552,Predominant degree awarded (recoded 0s and 4s),degrees_awarded.predominant_recoded
+75,PCIP49,6951.314248143127,6951.314248143127,Percentage of degrees awarded in Transportation And Materials Moving.,program_percentage.transportation
+64,PCIP03,-6754.627658554133,6754.627658554133,Percentage of degrees awarded in Natural Resources And Conservation.,program_percentage.resources
+208,INC_PCT_H2,6339.328754241484,6339.328754241484,"Aided students with family incomes between $110,001+ in nominal dollars",share_highincome.110001plus
+213,FAMINC_IND,5976.656505460821,5976.656505460821,Average family income for independent students in real 2015 dollars,demographics.avg_family_income_independents
+53,PCIP16,-4885.597936465463,4885.597936465463,"Percentage of degrees awarded in Foreign Languages, Literatures, And Linguistics.",program_percentage.language
+51,PCIP23,-4080.6083141331687,4080.6083141331687,Percentage of degrees awarded in English Language And Literature/Letters.,program_percentage.english
+103,FTFTPCTFLOAN_POOLED_SUPP,-3595.5382161192524,3595.5382161192524,"Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a federal loan, pooled in rolling averages and suppressed for small n size",ftft_federal_loan_rate_pooled
+234,POVERTY_RATE,-2998.814607988924,2998.814607988924,"Poverty rate, via Census data",demographics.poverty_rate
+202,TUITFTE,2881.7356880254274,2881.7356880254274,Net tuition revenue per full-time equivalent student,tuition_revenue_per_fte
+45,PCIP10,2800.326044903185,2800.326044903185,Percentage of degrees awarded in Communications Technologies/Technicians And Support Services.,program_percentage.communications_technology
+237,FIRST_GEN,2739.972655732279,2739.972655732279,Share of first-generation students,demographics.first_generation
+227,PCT_ASIAN,2653.6446864690706,2653.6446864690706,"Percent of the population from students' zip codes that is Asian, via Census data",demographics.share_asian.home_ZIP
+43,PCIP52,2603.41576160625,2603.41576160625,"Percentage of degrees awarded in Business, Management, Marketing, And Related Support Services.",program_percentage.business_marketing
+157,NUM45_PRIV,2229.5683038763996,2229.5683038763996,"Number of Title IV students, $110,000+ family income (private for-profit and nonprofit institutions)",title_iv.private.by_income_level.110001-plus
+124,NPT42_PRIV,1550.7177877053707,1550.7177877053707,"Average net price for $30,001-$48,000 family income (private for-profit and nonprofit institutions)",net_price.private.by_income_level.30001-48000
+138,NPT4_75UP_PUB,-1543.3833732527726,1543.3833732527726,"Average net price for $75,000+ family income (public institutions)",net_price.public.by_income_level.75000-plus
+60,PCIP27,1507.1336978629122,1507.1336978629122,Percentage of degrees awarded in Mathematics And Statistics.,program_percentage.mathematics
+232,PCT_BA,1374.94768952469,1374.94768952469,"Percent of the population from students' zip codes with a bachelor's degree over the age 25, via Census data",demographics.share_bachelors_degree_age25.home_ZIP
+195,DISTANCEONLY,1355.1054141326158,1355.1054141326158,Flag for distance-education-only education,online_only
+63,PCIP30,-1307.8896593977422,1307.8896593977422,Percentage of degrees awarded in Multi/Interdisciplinary Studies.,program_percentage.multidiscipline
+161,NUM42_PRIV,873.7246473332923,873.7246473332923,"Number of Title IV students, $30,001-$48,000 family income (private for-profit and nonprofit institutions)",title_iv.private.by_income_level.30001-48000
+235,DEPENDENT,-816.3816165097888,816.3816165097888,Share of dependent students,demographics.dependent
+238,MARRIED,-358.5686761284278,358.5686761284278,Share of married students,demographics.married
+79,SATWR25,188.36735672696886,188.36735672696886,25th percentile of SAT scores at the institution (writing),sat_scores.25th_percentile.writing
