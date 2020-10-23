@@ -25,6 +25,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" component={LandingPage} exact />
+        <Route path="/College-Scorecard-Analysis" component={LandingPage} exact />
         <Route path="/Main" component={LandingPage} />
         <Route path="/visualizations" component={Visualizations} />
         <Route path="/data" component={Data} />
@@ -36,7 +37,7 @@ function App() {
         <Route path="/ForbesRanking" component={ForbesRanking} />
       </Switch>
     </Router>
-  )
+  );
 }
 
 export default App
