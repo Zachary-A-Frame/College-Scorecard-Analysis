@@ -113,7 +113,7 @@ export default class ForbesRanking extends React.Component {
               classification model. The second was a neural network analysis
             </p>
             <h3 className="option__text" style={{ textAlign: "center" }}>
-              <a href="http://localhost:3000/web-design-challenge/static/media/random_forest_summary_forbes_best_tree.d4dc0fd9.png">
+              <a href="http://localhost:3000/College-Scorecard-Analysis/static/media/random_forest_summary_earnings_tree.0001efa3.png">
                 Random Forest Forbes Tree
               </a>
             </h3>

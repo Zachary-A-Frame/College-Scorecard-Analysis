@@ -126,7 +126,7 @@ export default class MajorResults extends React.Component {
           <div className="option">
             <h2 className="title">Major Selection Results</h2>
             <h3 className="option__text" style={{ textAlign: "center" }}>
-              <a href="http://localhost:3000/web-design-challenge/static/media/random_forest_summary_college_major_tree.85810e62.png">
+              <a href="http://localhost:3000/College-Scorecard-Analysis/static/media/random_forest_summary_college_major_tree.85810e62.png">
                 Random Forest Forbes Tree
               </a>
             </h3>
