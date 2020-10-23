@@ -8,12 +8,8 @@ import elasticData from "../Resources/elasticnet_results_debt_df.csv"
 import forestData from "../Resources/random_forest_debt_summary_table.csv"
 
 import Plotly from "plotly.js"
-import importScript from "./script.js"
-// import createPlotlyComponent from "react-plotly.js/factory"
+import createPlotlyComponent from "react-plotly.js/factory"
 
-importScript(
-  "https://unpkg.com/react-plotly.js@1.0.2/dist/create-plotly-component.js"
-);
 const Plot = createPlotlyComponent(Plotly)
 
 let xValues = []
