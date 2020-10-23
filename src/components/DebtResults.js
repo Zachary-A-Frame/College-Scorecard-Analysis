@@ -7,8 +7,8 @@ import data from "../Resources/lasso_results_sorted_debt_df.csv"
 import elasticData from "../Resources/elasticnet_results_debt_df.csv"
 import forestData from "../Resources/random_forest_debt_summary_table.csv"
 
-import Plotly from "plotly.js"
-import createPlotlyComponent from "react-plotly.js/factory"
+// import Plotly from "plotly.js"
+// import createPlotlyComponent from "react-plotly.js/factory"
 
 const Plot = createPlotlyComponent(Plotly)
 
