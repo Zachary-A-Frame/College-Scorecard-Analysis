@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "http://zachary-a-frame.github.io/College-Scorecard-Analysis",
-  "engines" : {
-    "node" : "v10.16.3"
+  "engines": {
+    "node": "v10.16.3"
   },
   "dependencies": {
     "-": "0.0.1",
