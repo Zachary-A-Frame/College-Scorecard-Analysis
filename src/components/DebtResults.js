@@ -10,6 +10,9 @@ import forestData from "../Resources/random_forest_debt_summary_table.csv"
 import Plotly from "plotly.js"
 import createPlotlyComponent from "react-plotly.js/factory"
 
+import DebtLegend from "./DebtLegend";
+
+
 const Plot = createPlotlyComponent(Plotly)
 
 let xValues = []
@@ -130,12 +133,13 @@ export default class DebtResults extends React.Component {
   render() {
     return (
       <div>
+        <DebtLegend></DebtLegend>
         <div className="container">
           <div className="option">
             <h2 className="title">College Debt Results</h2>
             <h3 className="option__text" style={{ textAlign: "center" }}>
               <a href="http://localhost:3000/College-Scorecard-Analysis/static/media/random_forest_summary_debt_tree.8ddc8df4.png">
-                Random Forest Forbes Tree
+                Random Forest Debt Tree
               </a>
             </h3>
             <RandomForestDebt

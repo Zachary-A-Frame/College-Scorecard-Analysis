@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = (props) => (
   <div>
-    <div className="container">
+    <div className="container" style={{ margin: "0 auto" }}>
       <div className="option">
         <h2 className="title">Summary Page</h2>
         {/* <img
@@ -41,7 +41,11 @@ const Header = (props) => (
       </div>
       <br></br>
       <h3>To select which models to run we utilized the following guide.</h3>
-      <img src={require("../assets/ml-mapOnHomepage.png")} id="ml-map" alt="ml-map" />
+      <img
+        src={require("../assets/ml-mapOnHomepage.png")}
+        id="ml-map"
+        alt="ml-map"
+      />
     </div>
   </div>
 );

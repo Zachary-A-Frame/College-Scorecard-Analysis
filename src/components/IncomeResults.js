@@ -10,6 +10,8 @@ import elasticData from "../Resources/elasticnet_results_sorted_earnings_df.csv"
 import Plotly from "plotly.js"
 import createPlotlyComponent from "react-plotly.js/factory"
 
+import IncomeLegend from './IncomeLegend'
+
 const Plot = createPlotlyComponent(Plotly)
 
 let xValues = []
@@ -77,6 +79,7 @@ export default class Income extends React.Component {
   render() {
     return (
       <div>
+        <IncomeLegend></IncomeLegend>
         <div className="container">
           <div className="option">
             <h2 className="title">Starting Income Results</h2>
@@ -84,7 +87,6 @@ export default class Income extends React.Component {
             <h3 style={{ textAlign: "center" }}>
               Mean Earning After 6 Years From Enrollment
             </h3>
-
             <h3 style={{ textAlign: "center" }}>
               Simple Linear Regression Model between earnings and tuition to
               determine if a relation exists.
@@ -93,7 +95,7 @@ export default class Income extends React.Component {
             <hr></hr>
             <h3 className="option__text" style={{ textAlign: "center" }}>
               <a href="http://localhost:3000/College-Scorecard-Analysis/static/media/random_forest_summary_earnings_tree.0001efa3.png">
-                Random Forest Forbes Tree
+                Random Forest Earnings Tree
               </a>
             </h3>
             <RandomForest
@@ -183,6 +185,42 @@ export default class Income extends React.Component {
                 </tr>
               </tbody>
             </table>
+            <div className="row">
+              <Plot
+                className="col"
+                data={[
+                  {
+                    x: ["Random Forest", "Lasso", "Elastic Net"],
+                    y: [0.828, 0.77, 0.691],
+                    type: "bar",
+                    mode: "lines+markers",
+                    marker: { color: "#a51c30" },
+                  },
+                ]}
+                layout={{
+                  width: 320,
+                  height: 240,
+                  title: "Unoptimized Model Score",
+                }}
+              />
+              <Plot
+                className="col"
+                data={[
+                  {
+                    x: ["Random Forest", "Lasso", "Elastic Net"],
+                    y: [0.8077, 0.734, 0.837],
+                    type: "bar",
+                    mode: "lines+markers",
+                    marker: { color: "#a51c30" },
+                  },
+                ]}
+                layout={{
+                  width: 320,
+                  height: 240,
+                  title: "Optimized Model Score",
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>

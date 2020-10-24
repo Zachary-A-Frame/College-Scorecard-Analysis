@@ -10,6 +10,9 @@ import forestData from "../Resources/random_forest_major_earnings_summary_table.
 import Plotly from "plotly.js";
 import createPlotlyComponent from "react-plotly.js/factory";
 
+import MajorLegend from "./MajorLegend";
+
+
 const Plot = createPlotlyComponent(Plotly);
 
 let xValues = [];
@@ -122,12 +125,13 @@ export default class MajorResults extends React.Component {
   render() {
     return (
       <div>
+        <MajorLegend></MajorLegend>
         <div className="container">
           <div className="option">
             <h2 className="title">Major Selection Results</h2>
             <h3 className="option__text" style={{ textAlign: "center" }}>
               <a href="http://localhost:3000/College-Scorecard-Analysis/static/media/random_forest_summary_college_major_tree.85810e62.png">
-                Random Forest Forbes Tree
+                Random Forest College Major Tree
               </a>
             </h3>
             <RandomForestMajor

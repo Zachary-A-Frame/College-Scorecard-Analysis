@@ -1,0 +1,13 @@
+.legend {
+     float: right;
+     margin-right: 15%;
+     max-width: 25%;
+     border: 5px solid lighten($light-blue, 10%);
+     padding: 15px;
+     position: fixed;
+     right: 0;
+}
+
+.legend_title {
+     border-bottom: 2px solid lighten($light-blue, 10%);
+}

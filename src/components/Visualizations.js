@@ -5,7 +5,7 @@ export default class Visualizations extends React.Component {
   render() {
     return (
       <div>
-        <div className="container">
+        <div className="container" style={{ margin: "0 auto" }}>
           <div className="option">
             <h2 className="title">Model Methodology</h2>
             <p>

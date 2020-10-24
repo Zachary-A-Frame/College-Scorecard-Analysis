@@ -1,7 +1,7 @@
 .sidenav {
      height: 100%;
      /* Full-height: remove this if you want "auto" height */
-     width: 160px;
+     width: 8%;
      /* Set the width of the sidebar */
      position: fixed;
      /* Fixed Sidebar (stay in place on scroll) */
@@ -19,15 +19,14 @@
      padding-top: 20px;
 }
 
-
-
 /* The navigation menu links */
 .sidenav a {
      padding: 6px 8px 6px 16px;
      text-decoration: none;
-     font-size: 25px;
+     font-size: 15px;
      color: white;
      display: block;
+     border-bottom: 1px solid black;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -45,7 +44,7 @@
      position: absolute;
      background-color: $off-black;
      text-emphasis-color: white;
-     min-width: 180px;
+     min-width: 25%;
      min-height: 350px;
 }
 

@@ -4,13 +4,6 @@ export default class RandomForest extends React.Component {
   render() {
     return (
       <div>
-        <div className="container">
-          <div className="option">
-            <div className="row">
-              <div className="column">
-                <h3 className="option__text">
-                  Random Forest Summary Earnings Tree
-                </h3>
 
                 <img
                   src={require("../assets/random_forest_summary_earnings_tree.png")}
@@ -20,10 +13,7 @@ export default class RandomForest extends React.Component {
                   className="image img-fluid"
                 ></img>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
     );
   }
 }

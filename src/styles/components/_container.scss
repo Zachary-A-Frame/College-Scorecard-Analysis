@@ -1,8 +1,15 @@
+
 .container {
-     max-width: 85rem;
-     margin: 0 auto;
+     max-width: 40%;
+     // margin: 0 auto;
      padding: 0 $m-size;
+     margin-left: 15%;
 }
+
+.summary {
+     margin: 0 auto;
+}
+
 
 .table {
      margin-top: 40px;
