@@ -42,7 +42,7 @@ export default class Data extends React.Component {
               </button>
             </a>
           </h3>
-          For an explanation of rankings,
+          For an explanation of Forbes rankings,
           <a
             href="https://www.forbes.com/top-colleges/#7b9bf65c1987"
             target="_blank"
@@ -51,7 +51,7 @@ export default class Data extends React.Component {
             Click Here
           </a>
           <br></br>
-          For the raw data,
+          For the Forbes raw data,
           <a
             href="https://www.kaggle.com/chris95cam/forbes-americas-top-colleges-2019/version/2"
             target="_blank"
