@@ -137,25 +137,68 @@ export default class DebtResults extends React.Component {
         <div className="container">
           <div className="option">
             <h2 className="title">College Debt Results</h2>
+            <hr></hr>
+            <h2>
+              Factors that determine the highest amount of Debt after enrolling
+              in college:
+            </h2>
+            <h3 style={{ marginLeft: "25%", textDecoration: "underline" }}>
+              Do:{" "}
+            </h3>
+            <ul>
+              <li>Major in Architecture</li>
+              <li>Go to a school with large tuition</li>
+              <li>Take 8 years to graduate</li>
+              <li>Withdraw within 8 years</li>
+            </ul>
+            <h3 style={{ marginLeft: "25%", textDecoration: "underline" }}>
+              Don't:{" "}
+            </h3>
+            <ul>
+              <li>Withdraw within 2 years</li>
+              <li>Major in Ethnic, Cultural, Gender, And Group Studies.</li>
+              <li>Major in Multi/Interdisciplinary Studies.</li>
+            </ul>
             <h3 className="option__text" style={{ textAlign: "center" }}>
-              <a href="http://localhost:3000/College-Scorecard-Analysis/static/media/random_forest_summary_debt_tree.8ddc8df4.png">
-                Random Forest Debt Tree
+              <a href="https://zachary-a-frame.github.io/College-Scorecard-Analysis/static/media/random_forest_summary_debt_tree.8ddc8df4.png">
+                Random Forest Debt Tree{" "}
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-zoom-in"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                  />
+                  <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z"
+                  />
+                </svg>
               </a>
             </h3>
             <RandomForestDebt
               style={{ width: "100%", height: "100%" }}
             ></RandomForestDebt>
-            <Plot
-              data={this.state.randomForestData}
-              layout={this.state.randomForestLayout}
-            />
-            <Plot data={this.state.data} layout={this.state.layout} />
-            <Plot
-              data={this.state.elasticData}
-              layout={this.state.elasticLayout}
-            />
+            <div className="Plot">
+              <Plot
+                className="Plot"
+                data={this.state.randomForestData}
+                layout={this.state.randomForestLayout}
+              />
+              <Plot data={this.state.data} layout={this.state.layout} />
+              <Plot
+                data={this.state.elasticData}
+                layout={this.state.elasticLayout}
+              />
+            </div>
             <br></br>
-            <table className="table">
+            {/* <table className="table">
               <thead>
                 <tr>
                   <th scope="col">Topic</th>
@@ -192,7 +235,43 @@ export default class DebtResults extends React.Component {
                   <td>30</td>
                 </tr>
               </tbody>
-            </table>
+            </table> */}
+            <div className="row">
+              <Plot
+                className="col"
+                data={[
+                  {
+                    x: ["Random Forest", "Lasso", "Elastic Net"],
+                    y: [0.57, 0.18, 0.398],
+                    type: "bar",
+                    mode: "lines+markers",
+                    marker: { color: "#a51c30" },
+                  },
+                ]}
+                layout={{
+                  width: 320,
+                  height: 240,
+                  title: "Unoptimized Model Score",
+                }}
+              />
+              <Plot
+                className="col"
+                data={[
+                  {
+                    x: ["Random Forest", "Elastic Net"],
+                    y: [0.544, 0.623],
+                    type: "bar",
+                    mode: "lines+markers",
+                    marker: { color: "#a51c30" },
+                  },
+                ]}
+                layout={{
+                  width: 320,
+                  height: 240,
+                  title: "Optimized Model Score",
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>

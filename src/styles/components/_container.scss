@@ -15,6 +15,10 @@
      margin-top: 40px;
 }
 
+.Plot {
+     overflow-x: auto;
+}
+
 #ml-map {
      max-width: 150%;
      max-height: 150%;
@@ -24,3 +28,4 @@ td::selection, th::selection {
      background-color: #a51c30;
      color: white;
 }
+

@@ -35,12 +35,6 @@ export default class DebtLegend extends React.Component {
             </p>
           </div>
           <div className="row">
-            <p className="col">COSTT4_A</p>
-            <p className="col">
-              Average cost of attendance (academic year institutions)
-            </p>
-          </div>
-          <div className="row">
             <p className="col">PCIP04</p>
             <p className="col">
               Percentage of degrees awarded in Architecture And Related

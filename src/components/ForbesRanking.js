@@ -57,14 +57,15 @@ export default class ForbesRanking extends React.Component {
           <div className="option">
             <h2 className="title">Forbes Ranking Results</h2>
             <p>
-              The final data set analyzed was the forbes college rankings. This
-              dataset was used to determine if it could be verified that the
-              calculation made by forbes was both accurate and that it reflected
-              reality. The dataset released by Forbes was merged with our master
-              dataset. Only the schools included in Forbes ranking were included
-              from our master dataset. This resulted in a list of approximately
-              640 schools. To the best of our ability the Forbes ranking
-              calculation was duplicated using the our data from our master set.
+              The final data set analyzed was the Forbes Top College Rankings.
+              This dataset was used to determine if it could be verified that
+              the calculation made by Forbes was both accurate and that it
+              reflected reality. The dataset released by Forbes was merged with
+              our master dataset. Only the schools included in Forbes ranking
+              were included from our master dataset. This resulted in a list of
+              approximately 640 schools. To the best of our ability the Forbes
+              ranking calculation was duplicated using our data from our master
+              set.
             </p>
             <p>
               Forbes ranking = 20% rank on Forbes 2018 Top Colleges ranking +
@@ -83,8 +84,8 @@ export default class ForbesRanking extends React.Component {
             </p>
             <p>
               It was not clear from the documentation on the Forbes website how
-              they related the individual variable to one another. For example
-              more debt is not a good thing but a bad thing. Therefore the
+              they related the individual variable to one another. For example,
+              more debt is not a good thing but a bad thing. Therefore, the
               impact of that variable going up must cause the overall ranking to
               get worse. Our formula intends to address that concern by
               normalizing each value to the maximum value for each variable.
@@ -96,14 +97,14 @@ export default class ForbesRanking extends React.Component {
               schools matched, but that appeared to be about it.
             </p>
             <p>
-              To further explore the problem it was decided to divide the
+              To further explore the problem, it was decided to divide the
               rankings into segments of 5%, 10%, 20%, and 50% which made sets of
               schools of 34 * 20, 64 * 10, 128 * 5, and 320 * 2, respectively.
               Using these “bins” of rankings we then compared our ranking to
               that of the Forbes data set over various bins. It became clear
               that the models worked well for choosing 2 tiers of schools and
               reasonably well for 5 tiers. Using more tiers than that the
-              accuracy of the model became quite poor. Therefore the model was
+              accuracy of the model became quite poor. Therefore, the model was
               analyzed using the 5 tier values where the results were divided
               into sets of 128.
             </p>
@@ -112,9 +113,48 @@ export default class ForbesRanking extends React.Component {
               performed on the dataset. The first was a random forest
               classification model. The second was a neural network analysis
             </p>
-            <h3 className="option__text" style={{ textAlign: "center" }}>
-              <a href="http://localhost:3000/College-Scorecard-Analysis/static/media/random_forest_summary_earnings_tree.0001efa3.png">
-                Random Forest Forbes Tree
+            <img
+              src={require("../assets/confusion-matrix.png")}
+              alt="random_forest_summary"
+              height="100%"
+              width="50%%"
+              className=" img-fluid"
+              style={{ float: "left" }}
+            ></img>
+            <img
+              src={require("../assets/confusion-matrix-2.png")}
+              alt="random_forest_summary"
+              height="100%"
+              width="50%%"
+              className=" img-fluid"
+              style={{ float: "left" }}
+            ></img>
+            <br></br>
+            <br></br>
+            <h3 className="option__text">
+              <a
+                href="https://zachary-a-frame.github.io/College-Scorecard-Analysis/static/media/random_forest_summary_forbes_best_tree.d4dc0fd9.png"
+                style={{ textAlign: "center" }}
+              >
+                Random Forest Forbes Tree{" "}
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-zoom-in"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                  />
+                  <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z"
+                  />
+                </svg>
               </a>
             </h3>
             <img
@@ -124,7 +164,9 @@ export default class ForbesRanking extends React.Component {
               width="100%"
               className=" img-fluid"
             ></img>
-            <Plot data={this.state.data} layout={this.state.layout} />
+            <div className="Plot">
+              <Plot data={this.state.data} layout={this.state.layout} />
+            </div>
             <br></br>
             <img
               src={require("../assets/model.png")}

@@ -33,24 +33,24 @@
 .sidenav a:hover {
      color: #f1f1f1;
 }
+// No longer in use.
+// .dropdown {
+//      position: relative;
+//      display: inline-block;
+// }
 
-.dropdown {
-     position: relative;
-     display: inline-block;
-}
+// .dropdown-content {
+//      display: none;
+//      position: absolute;
+//      background-color: $off-black;
+//      text-emphasis-color: white;
+//      min-width: 25%;
+//      min-height: 350px;
+// }
 
-.dropdown-content {
-     display: none;
-     position: absolute;
-     background-color: $off-black;
-     text-emphasis-color: white;
-     min-width: 25%;
-     min-height: 350px;
-}
-
-.dropdown:hover .dropdown-content {
-     display: block;
-}
+// .dropdown:hover .dropdown-content {
+//      display: block;
+// }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {

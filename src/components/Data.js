@@ -16,10 +16,21 @@ export default class Data extends React.Component {
             in College Scorecard. Please note that datafiles available in the
             “Download All Data” provide more data elements and represent a
             larger universe of institutions than what is presented in the
-            Scorecard consumer page here: collegescorecard.ed.gov. For more
+            Scorecard consumer page{" "}
+            <a href="https://collegescorecard.ed.gov">here</a> . For more
             information on College Scorecard data,{" "}
             <a href="https://collegescorecard.ed.gov/data/documentation/">
               {" "}
+              Click Here
+            </a>
+            <br></br>
+            For an explanation of rankings,
+            <a href="https://www.forbes.com/top-colleges/#7b9bf65c1987">
+              Click Here
+            </a>
+            <br></br>
+            For the raw data,
+            <a href="https://www.kaggle.com/chris95cam/forbes-americas-top-colleges-2019/version/2">
               Click Here
             </a>
           </p>
@@ -45,7 +56,6 @@ export default class Data extends React.Component {
             data={ColumnHeadings}
             csvDelimiter=","
             tableClassName="table table-striped table-hover"
-            style={{ padding: "100px" }}
           />
         </div>
         <div className="containerdata" id="college-list-data">
@@ -55,7 +65,6 @@ export default class Data extends React.Component {
             data={collegeListData}
             csvDelimiter=","
             tableClassName="table table-striped table-hover"
-            style={{ padding: "100px" }}
           />
         </div>
       </div>

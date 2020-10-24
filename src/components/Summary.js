@@ -45,13 +45,15 @@ const Header = (props) => (
         src={require("../assets/ml-mapOnHomepage.png")}
         id="ml-map"
         alt="ml-map"
+        style={{ maxWidth: "100%" }}
+        className="image image-fluid"
       />
     </div>
   </div>
 );
 
 Header.defaultProps = {
-  title: "Climate Analysis",
+  title: "College Scorecard Analysis",
 };
 
 export default Header;

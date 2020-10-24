@@ -52,7 +52,7 @@ export default class Income extends React.Component {
           elasticLayout: {
                width: 720,
                height: 400,
-               title: "Elastic Net Regression Model",
+               title: "Elastic Net Regression Model"
           }
 }
 
@@ -84,70 +84,117 @@ export default class Income extends React.Component {
           <div className="option">
             <h2 className="title">Starting Income Results</h2>
             <hr></hr>
-            <h3 style={{ textAlign: "center" }}>
-              Mean Earning After 6 Years From Enrollment
+            <h2>
+              Factors that determine the highest income 6 years after enrollment
+              in college:{" "}
+            </h2>
+            <h3 style={{ marginLeft: "25%", textDecoration: "underline" }}>
+              Do:{" "}
             </h3>
+            <ul>
+              <li>
+                Major in Engineering, Health Professions, Transporation And
+                Materials Moving, Mechanic
+              </li>
+              <li>Go to College that spends heavily on faculty salaries</li>
+              <li>
+                Go to college that has high instructional expenditures per full
+                time students
+              </li>
+              <li>Come from a family with a family income over $110,000</li>
+            </ul>
+            <h3 style={{ marginLeft: "25%", textDecoration: "underline" }}>
+              Don't:{" "}
+            </h3>
+            <ul>
+              <li>Withdrawal from college after 2 years</li>
+              <li>
+                Don't major in Visual & Performing Arts, Natural Resources and
+                Conservation
+              </li>
+              <li>Don't come from a family that makes $30,000/year</li>
+            </ul>
             <h3 style={{ textAlign: "center" }}>
               Simple Linear Regression Model between earnings and tuition to
-              determine if a relation exists.
+              determine if a relation exists:
             </h3>
             <MeanEarnings className="visualizations"></MeanEarnings>
             <hr></hr>
             <h3 className="option__text" style={{ textAlign: "center" }}>
-              <a href="http://localhost:3000/College-Scorecard-Analysis/static/media/random_forest_summary_earnings_tree.0001efa3.png">
-                Random Forest Earnings Tree
+              <a href="https://zachary-a-frame.github.io/College-Scorecard-Analysis/static/media/random_forest_summary_earnings_tree.0001efa3.png">
+                Random Forest Earnings Tree{" "}
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-zoom-in"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                  />
+                  <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z"
+                  />
+                </svg>
               </a>
             </h3>
             <RandomForest
               style={{ width: "100%", height: "100%" }}
             ></RandomForest>
-            <Plot
-              data={[
-                {
-                  x: [
-                    "WDRAW_ORIG_YR2_RT",
-                    "TUITFTE",
-                    "PCIP51",
-                    "MARRIED",
-                    "PCIP50",
-                    "SAT_AVG_ALL",
-                    "UGDS",
-                    "DEPENDENT",
-                    "SATMT25",
-                    "PCIP14",
-                    "FIRST_GEN",
-                  ],
-                  y: [
-                    0.33522776619399347,
-                    0.11220941858023022,
-                    0.09141163020287281,
-                    0.07713876539017006,
-                    0.06334198959290263,
-                    0.06304269679490501,
-                    0.05644540020803969,
-                    0.05446367613749309,
-                    0.05388399800392126,
-                    0.05309461760723638,
-                    0.03974004128823523,
-                  ],
-                  type: "bar",
-                  mode: "lines+markers",
-                  marker: { color: "#a51c30" },
-                },
-              ]}
-              layout={{
-                width: 720,
-                height: 400,
-                title: "Random Forest Summary",
-              }}
-            />
-            <Plot data={this.state.data} layout={this.state.layout} />
-            <Plot
-              data={this.state.elasticData}
-              layout={this.state.elasticLayout}
-            />
+            <div className="Plot">
+              <Plot
+                data={[
+                  {
+                    x: [
+                      "WDRAW_ORIG_YR2_RT",
+                      "TUITFTE",
+                      "PCIP51",
+                      "MARRIED",
+                      "PCIP50",
+                      "SAT_AVG_ALL",
+                      "UGDS",
+                      "DEPENDENT",
+                      "SATMT25",
+                      "PCIP14",
+                      "FIRST_GEN",
+                    ],
+                    y: [
+                      0.33522776619399347,
+                      0.11220941858023022,
+                      0.09141163020287281,
+                      0.07713876539017006,
+                      0.06334198959290263,
+                      0.06304269679490501,
+                      0.05644540020803969,
+                      0.05446367613749309,
+                      0.05388399800392126,
+                      0.05309461760723638,
+                      0.03974004128823523,
+                    ],
+                    type: "bar",
+                    mode: "lines+markers",
+                    marker: { color: "#a51c30" },
+                  },
+                ]}
+                layout={{
+                  width: 720,
+                  height: 400,
+                  title: "Random Forest Summary",
+                }}
+              />
+              <Plot data={this.state.data} layout={this.state.layout} />
+              <Plot
+                data={this.state.elasticData}
+                layout={this.state.elasticLayout}
+              />
+            </div>
             <br></br>
-            <table class="table">
+            {/* <table class="table">
               <thead>
                 <tr>
                   <th scope="col">Topic</th>
@@ -184,7 +231,7 @@ export default class Income extends React.Component {
                   <td>30</td>
                 </tr>
               </tbody>
-            </table>
+            </table> */}
             <div className="row">
               <Plot
                 className="col"

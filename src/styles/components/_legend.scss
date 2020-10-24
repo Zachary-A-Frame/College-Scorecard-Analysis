@@ -6,8 +6,12 @@
      padding: 15px;
      position: fixed;
      right: 0;
+     font-size: 15px;
+     max-height: 85%;
+     overflow-y: auto;
 }
 
 .legend_title {
      border-bottom: 2px solid lighten($light-blue, 10%);
 }
+
