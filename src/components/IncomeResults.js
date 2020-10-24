@@ -88,7 +88,7 @@ export default class Income extends React.Component {
               Factors that determine the highest income 6 years after enrollment
               in college:{" "}
             </h2>
-            <h3 style={{ marginLeft: "25%", textDecoration: "underline" }}>
+            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
               Do:{" "}
             </h3>
             <ul>
@@ -103,7 +103,7 @@ export default class Income extends React.Component {
               </li>
               <li>Come from a family with a family income over $110,000</li>
             </ul>
-            <h3 style={{ marginLeft: "25%", textDecoration: "underline" }}>
+            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
               Don't:{" "}
             </h3>
             <ul>

@@ -133,7 +133,7 @@ export default class MajorResults extends React.Component {
               Factors that determine the highest income based on Major
               selection:
             </h2>
-            <h3 style={{ marginLeft: "25%", textDecoration: "underline" }}>
+            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
               Do Major In:
             </h3>
             <ul>
@@ -144,7 +144,7 @@ export default class MajorResults extends React.Component {
               <li>Statistics</li>
               <li>Transportation</li>
             </ul>
-            <h3 style={{ marginLeft: "25%", textDecoration: "underline" }}>
+            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
               Don't Major In:{" "}
             </h3>
             <ul>

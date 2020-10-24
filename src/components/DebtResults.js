@@ -142,7 +142,7 @@ export default class DebtResults extends React.Component {
               Factors that determine the highest amount of Debt after enrolling
               in college:
             </h2>
-            <h3 style={{ marginLeft: "25%", textDecoration: "underline" }}>
+            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
               Do:{" "}
             </h3>
             <ul>
@@ -151,7 +151,7 @@ export default class DebtResults extends React.Component {
               <li>Take 8 years to graduate</li>
               <li>Withdraw within 8 years</li>
             </ul>
-            <h3 style={{ marginLeft: "25%", textDecoration: "underline" }}>
+            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
               Don't:{" "}
             </h3>
             <ul>
