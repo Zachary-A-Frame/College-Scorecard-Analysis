@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/College-Scorecard-Analysis/static/css/main.69058deb.chunk.css",
-    "main.js": "/College-Scorecard-Analysis/static/js/main.1ed02a04.chunk.js",
-    "main.js.map": "/College-Scorecard-Analysis/static/js/main.1ed02a04.chunk.js.map",
+    "main.js": "/College-Scorecard-Analysis/static/js/main.b419317c.chunk.js",
+    "main.js.map": "/College-Scorecard-Analysis/static/js/main.b419317c.chunk.js.map",
     "runtime-main.js": "/College-Scorecard-Analysis/static/js/runtime-main.ba7aff51.js",
     "runtime-main.js.map": "/College-Scorecard-Analysis/static/js/runtime-main.ba7aff51.js.map",
     "static/js/2.3d8f50d3.chunk.js": "/College-Scorecard-Analysis/static/js/2.3d8f50d3.chunk.js",
     "static/js/2.3d8f50d3.chunk.js.map": "/College-Scorecard-Analysis/static/js/2.3d8f50d3.chunk.js.map",
     "index.html": "/College-Scorecard-Analysis/index.html",
-    "precache-manifest.d73d06141cd4bde73802fd11be6f40b6.js": "/College-Scorecard-Analysis/precache-manifest.d73d06141cd4bde73802fd11be6f40b6.js",
+    "precache-manifest.cb6c50268c3d260f0da5beb4677b7ab8.js": "/College-Scorecard-Analysis/precache-manifest.cb6c50268c3d260f0da5beb4677b7ab8.js",
     "service-worker.js": "/College-Scorecard-Analysis/service-worker.js",
     "static/css/main.69058deb.chunk.css.map": "/College-Scorecard-Analysis/static/css/main.69058deb.chunk.css.map",
     "static/js/2.3d8f50d3.chunk.js.LICENSE.txt": "/College-Scorecard-Analysis/static/js/2.3d8f50d3.chunk.js.LICENSE.txt",
@@ -34,6 +34,6 @@
     "static/js/runtime-main.ba7aff51.js",
     "static/js/2.3d8f50d3.chunk.js",
     "static/css/main.69058deb.chunk.css",
-    "static/js/main.1ed02a04.chunk.js"
+    "static/js/main.b419317c.chunk.js"
   ]
 }
