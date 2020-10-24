@@ -160,7 +160,11 @@ export default class DebtResults extends React.Component {
               <li>Major in Multi/Interdisciplinary Studies.</li>
             </ul>
             <h3 className="option__text" style={{ textAlign: "center" }}>
-              <a href="https://zachary-a-frame.github.io/College-Scorecard-Analysis/static/media/random_forest_summary_debt_tree.8ddc8df4.png">
+              <a
+                href="https://zachary-a-frame.github.io/College-Scorecard-Analysis/static/media/random_forest_summary_debt_tree.8ddc8df4.png"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 Random Forest Debt Tree{" "}
                 <svg
                   width="1em"

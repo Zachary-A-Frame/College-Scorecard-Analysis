@@ -111,30 +111,86 @@ export default class ForbesRanking extends React.Component {
             <p>
               Two models were run to try to determine how the calculation
               performed on the dataset. The first was a random forest
-              classification model. The second was a neural network analysis
+              classification model. The second was a neural network analysis.
             </p>
-            <img
-              src={require("../assets/confusion-matrix.png")}
-              alt="random_forest_summary"
-              height="100%"
-              width="50%%"
-              className=" img-fluid"
-              style={{ float: "left" }}
-            ></img>
-            <img
-              src={require("../assets/confusion-matrix-2.png")}
-              alt="random_forest_summary"
-              height="100%"
-              width="50%%"
-              className=" img-fluid"
-              style={{ float: "left" }}
-            ></img>
+            <hr></hr>
+            <p>
+              Don’t take College rankings from websites at face value. Rankings
+              at the top of the list and bottom of the list are more accurate.
+              Reasonable accuracy when data is divided into quintiles. Forbes
+              data has several subjective measurements that the College
+              Scorecard does not have such as; Student Satisfaction (20%), which
+              includes results from Niche surveys on professor quality and data,
+              American Leaders (15%), which is based on our Forbes database of
+              successful people, including billionaires, powerful women, 30
+              Under 30 honorees, leaders in public service and in private
+              enterprise, Academic Success (12.5%), which rewards schools whose
+              alumni win prestigious scholarships and fellowships like the
+              Rhodes and the Fulbright or have earned Ph.Ds.
+            </p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">bin</th>
+                  <th scope="col">segment</th>
+                  <th scope="col">school rank</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>0</th>
+                  <td>0%-20%</td>
+                  <td>1-128</td>
+                </tr>
+                <tr>
+                  <th>1</th>
+                  <td>20%-40%</td>
+                  <td>129 - 256</td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td>40% - 60%</td>
+                  <td>257 - 384</td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td>60% - 80%</td>
+                  <td>385 - 512</td>
+                </tr>
+                <tr>
+                  <th>4</th>
+                  <td>80% - 100%</td>
+                  <td>512 - 640</td>
+                </tr>
+              </tbody>
+            </table>
+            <div>
+              <p style={{ marginLeft: "65%" }}>Random Forest</p>
+              <img
+                src={require("../assets/confusion-matrix.png")}
+                alt="random_forest_summary"
+                height="100%"
+                width="50%"
+                className=" img-fluid"
+                style={{ float: "left" }}
+              ></img>
+              <img
+                src={require("../assets/confusion-matrix-2.png")}
+                alt="random_forest_summary"
+                height="100%"
+                width="50%"
+                className=" img-fluid"
+                style={{ float: "left" }}
+              ></img>
+            </div>
             <br></br>
             <br></br>
             <h3 className="option__text">
               <a
                 href="https://zachary-a-frame.github.io/College-Scorecard-Analysis/static/media/random_forest_summary_forbes_best_tree.d4dc0fd9.png"
                 style={{ textAlign: "center" }}
+                target="_blank"
+                rel="noreferrer noopener"
               >
                 Random Forest Forbes Tree{" "}
                 <svg

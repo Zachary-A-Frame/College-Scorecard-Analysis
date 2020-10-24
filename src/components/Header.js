@@ -10,7 +10,7 @@ const Header = (props) => (
 );
 
 Header.defaultProps = {
-     title: 'How Much Does College Cost and Why?'
-}
+  title: "Factors Affecting College Cost and Debt",
+};
 
 export default Header;

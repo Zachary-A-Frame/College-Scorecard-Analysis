@@ -121,7 +121,11 @@ export default class Income extends React.Component {
             <MeanEarnings className="visualizations"></MeanEarnings>
             <hr></hr>
             <h3 className="option__text" style={{ textAlign: "center" }}>
-              <a href="https://zachary-a-frame.github.io/College-Scorecard-Analysis/static/media/random_forest_summary_earnings_tree.0001efa3.png">
+              <a
+                href="https://zachary-a-frame.github.io/College-Scorecard-Analysis/static/media/random_forest_summary_earnings_tree.0001efa3.png"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 Random Forest Earnings Tree{" "}
                 <svg
                   width="1em"

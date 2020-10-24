@@ -17,22 +17,23 @@ export default class Data extends React.Component {
             “Download All Data” provide more data elements and represent a
             larger universe of institutions than what is presented in the
             Scorecard consumer page{" "}
-            <a href="https://collegescorecard.ed.gov">here</a> . For more
-            information on College Scorecard data,{" "}
-            <a href="https://collegescorecard.ed.gov/data/documentation/">
+            <a
+              href="https://collegescorecard.ed.gov"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              here
+            </a>{" "}
+            . For more information on College Scorecard data,{" "}
+            <a
+              href="https://collegescorecard.ed.gov/data/documentation/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               {" "}
               Click Here
             </a>
             <br></br>
-            For an explanation of rankings,
-            <a href="https://www.forbes.com/top-colleges/#7b9bf65c1987">
-              Click Here
-            </a>
-            <br></br>
-            For the raw data,
-            <a href="https://www.kaggle.com/chris95cam/forbes-americas-top-colleges-2019/version/2">
-              Click Here
-            </a>
           </p>
           <h3>
             <a href="https://ed-public-download.app.cloud.gov/downloads/CollegeScorecard_Raw_Data.zip">
@@ -41,6 +42,23 @@ export default class Data extends React.Component {
               </button>
             </a>
           </h3>
+          For an explanation of rankings,
+          <a
+            href="https://www.forbes.com/top-colleges/#7b9bf65c1987"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Click Here
+          </a>
+          <br></br>
+          For the raw data,
+          <a
+            href="https://www.kaggle.com/chris95cam/forbes-americas-top-colleges-2019/version/2"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Click Here
+          </a>
         </div>
         <br></br>
         <p className="container">

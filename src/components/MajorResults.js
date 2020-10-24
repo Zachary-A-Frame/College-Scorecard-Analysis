@@ -156,7 +156,11 @@ export default class MajorResults extends React.Component {
               <li>Law Enforcement</li>
             </ul>
             <h3 className="option__text" style={{ textAlign: "center" }}>
-              <a href="https://zachary-a-frame.github.io/College-Scorecard-Analysis/static/media/random_forest_summary_college_major_tree.85810e62.png">
+              <a
+                href="https://zachary-a-frame.github.io/College-Scorecard-Analysis/static/media/random_forest_summary_college_major_tree.85810e62.png"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 Random Forest College Major Tree{" "}
                 <svg
                   width="1em"
