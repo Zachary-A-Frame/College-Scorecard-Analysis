@@ -7,12 +7,14 @@ export default class Navbar extends React.Component {
     return (
       <nav>
         <div className="sidenav">
-          <Link to="/">Home</Link>
-          <Link to="/visualizations">Models</Link>
-          <Link to="/Income">Income Results</Link>
-          <Link to="/Major">Major Results</Link>
-          <Link to="/Debt">Debt Results</Link>
-          <Link to="/ForbesRanking">Forbes Ranking Results</Link>
+          <Link to={`${process.env.PUBLIC_URL}/`}>Home</Link>
+          <Link to={`${process.env.PUBLIC_URL}/visualizations`}>Models</Link>
+          <Link to={`${process.env.PUBLIC_URL}/Income`}>Income Results</Link>
+          <Link to={`${process.env.PUBLIC_URL}/Major`}>Major Results</Link>
+          <Link to={`${process.env.PUBLIC_URL}/Debt`}>Debt Results</Link>
+          <Link to={`${process.env.PUBLIC_URL}/ForbesRanking`}>
+            Forbes Ranking Results
+          </Link>
           {/* <Nav>
             <NavDropdown title="Graphs" id="basic-nav-dropdown">
               <div className="dropdown-content">
@@ -26,7 +28,7 @@ export default class Navbar extends React.Component {
             </NavDropdown>
           </Nav> */}
           {/* <Link to={"/"}>Contact</Link> */}
-          <Link to="/Data">Data</Link>
+          <Link to={`${process.env.PUBLIC_URL}/Data`}>Data</Link>
         </div>
       </nav>
     );

@@ -24,17 +24,42 @@ function App() {
       <Header subtitle={subtitle} />
       <Navbar />
       <Switch>
-        <Route path="/" component={LandingPage} exact />
-        <Route path="/College-Scorecard-Analysis" component={LandingPage} exact />
-        <Route path="/Main" component={LandingPage} />
-        <Route path="/visualizations" component={Visualizations} />
-        <Route path="/data" component={Data} />
-        <Route path="/MeanEarnings" component={MeanEarnings} />
-        <Route path="/RandomForest" component={RandomForest} />
-        <Route path="/Income" component={IncomeResults} />
-        <Route path="/Major" component={MajorResults} />
-        <Route path="/Debt" component={DebtResults} />
-        <Route path="/ForbesRanking" component={ForbesRanking} />
+        <Route path={`${process.env.PUBLIC_URL}/College-Scorecard-Analysis`} component={LandingPage} />
+        <Route
+          path={`${process.env.PUBLIC_URL}/`}
+          component={LandingPage}
+          exact
+        />
+        {/* <Route path={`${process.env.PUBLIC_URL}/Main`} component={LandingPage} /> */}
+        <Route
+          path={`${process.env.PUBLIC_URL}/visualizations`}
+          component={Visualizations}
+        />
+        <Route path={`${process.env.PUBLIC_URL}/Data`} component={Data} />
+        <Route
+          path={`${process.env.PUBLIC_URL}/MeanEarnings`}
+          component={MeanEarnings}
+        />
+        <Route
+          path={`${process.env.PUBLIC_URL}/RandomForest`}
+          component={RandomForest}
+        />
+        <Route
+          path={`${process.env.PUBLIC_URL}/Income`}
+          component={IncomeResults}
+        />
+        <Route
+          path={`${process.env.PUBLIC_URL}/Major`}
+          component={MajorResults}
+        />
+        <Route
+          path={`${process.env.PUBLIC_URL}/Debt`}
+          component={DebtResults}
+        />
+        <Route
+          path={`${process.env.PUBLIC_URL}/ForbesRanking`}
+          component={ForbesRanking}
+        />
       </Switch>
     </Router>
   );
