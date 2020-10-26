@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3ab87124442994ad512dab7d610558fc",
+    "revision": "f48f942c7b9539b2e07eb0c89688ca12",
     "url": "/College-Scorecard-Analysis/index.html"
   },
   {
-    "revision": "f450151c9087dd374530",
+    "revision": "8b1f87624e99ab534d10",
     "url": "/College-Scorecard-Analysis/static/css/main.69058deb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/College-Scorecard-Analysis/static/js/2.3d8f50d3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f450151c9087dd374530",
-    "url": "/College-Scorecard-Analysis/static/js/main.47ba60e6.chunk.js"
+    "revision": "8b1f87624e99ab534d10",
+    "url": "/College-Scorecard-Analysis/static/js/main.53728a42.chunk.js"
   },
   {
     "revision": "d0bc9fac6109aa2d2938",
