@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7cfbfe6c162a37deb6a0f49a1a227117",
+    "revision": "540073784dead6e6d17394828a16fcd9",
     "url": "/College-Scorecard-Analysis/index.html"
   },
   {
