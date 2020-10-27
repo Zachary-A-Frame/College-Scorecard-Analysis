@@ -24,7 +24,7 @@ function App() {
       <Header subtitle={subtitle} />
       <Navbar />
       <Switch>
-        <Route path={`${process.env.PUBLIC_URL}/College-Scorecard-Analysis`} component={LandingPage} />
+        <Route path={`${process.env.PUBLIC_URL}/College-Scorecard-Analysis`} component={LandingPage} exact/>
         <Route
           path={`${process.env.PUBLIC_URL}/`}
           component={LandingPage}
