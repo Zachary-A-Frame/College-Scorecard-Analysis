@@ -20,7 +20,7 @@ function App() {
   const subtitle = "By Andrew Addie, Matt Moormeier, and Zach Frame"
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header subtitle={subtitle} />
       <Navbar />
       <Switch>
