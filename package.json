@@ -2,7 +2,7 @@
   "name": "web-design-challenge",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://zachary-a-frame.github.io/College-Scorecard-Analysis",
+  "homepage": "https://www.collegescorecardanalysis.tech/",
   "engines": {
     "node": "v10.16.3"
   },
