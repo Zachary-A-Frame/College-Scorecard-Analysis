@@ -19,7 +19,7 @@ const Header = (props) => (
         </p>
         <br></br>
         <p className="option__text">
-          <ul>
+
             <li>
               What factors are most important in determining the highest
               starting income in the first two years after graduating college?
@@ -36,7 +36,7 @@ const Header = (props) => (
               How accurate are popular college rankings such as the Forbes
               College Rankings list?
             </li>
-          </ul>
+
         </p>
       </div>
       <br></br>

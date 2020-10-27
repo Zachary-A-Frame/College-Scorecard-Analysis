@@ -128,7 +128,7 @@ export default class ForbesRanking extends React.Component {
               alumni win prestigious scholarships and fellowships like the
               Rhodes and the Fulbright or have earned Ph.Ds.
             </p>
-            <table class="table">
+            <table className="table">
               <thead>
                 <tr>
                   <th scope="col">bin</th>
@@ -197,7 +197,7 @@ export default class ForbesRanking extends React.Component {
                   width="1em"
                   height="1em"
                   viewBox="0 0 16 16"
-                  class="bi bi-zoom-in"
+                  className="bi bi-zoom-in"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                 >
