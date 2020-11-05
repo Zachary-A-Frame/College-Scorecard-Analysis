@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Header = (props) => (
   <div>
     <div className="container" style={{ margin: "0 auto" }}>
@@ -20,22 +19,24 @@ const Header = (props) => (
         </p>
         <br></br>
         <p className="option__text">
-          <li>
-            What factors are most important in determining the highest starting
-            income in the first two years after graduating college?
-          </li>
-          <li>
-            What factors are the most important in determining the highest
-            starting income based on major selection?
-          </li>
-          <li>
-            What factors are most prevalent that determine the highest amount of
-            debt and highest chance of defaulting on student loans?
-          </li>
-          <li>
-            How accurate are popular college rankings such as the Forbes College
-            Rankings list?
-          </li>
+
+            <li>
+              What factors are most important in determining the highest
+              starting income in the first two years after graduating college?
+            </li>
+            <li>
+              What factors are the most important in determining the highest
+              starting income based on major selection?
+            </li>
+            <li>
+              What factors are most prevalent that determine the highest amount
+              of debt and highest chance of defaulting on student loans?
+            </li>
+            <li>
+              How accurate are popular college rankings such as the Forbes
+              College Rankings list?
+            </li>
+
         </p>
       </div>
       <br></br>

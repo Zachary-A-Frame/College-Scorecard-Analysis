@@ -1,5 +1,5 @@
 import React from "react";
-import RandomForest from "./RandomForest.js";
+import RandomForestMajor from "./RandomForestMajor.js";
 
 import * as d3 from "d3";
 
@@ -12,6 +12,7 @@ import createPlotlyComponent from "react-plotly.js/factory";
 
 import MajorLegend from "./MajorLegend";
 
+
 const Plot = createPlotlyComponent(Plotly);
 
 let xValues = [];
@@ -23,24 +24,33 @@ let elasticY = [];
 let forestX = [];
 let forestY = [];
 
-let csvReader = () => {
+let lassoRegressionCsv = () => {
   d3.csv(data, function (data) {
     xValues.push(data.VARIABLE_NAME);
     yValues.push(+data.coefficient);
   });
-   d3.csv(elasticData, function (data) {
-     elasticX.push(data.VARIABLE_NAME);
-     elasticY.push(+data.coefficient);
-   });
+  return [xValues, yValues];
+};
+
+let elasticnetCsv = () => {
+  d3.csv(elasticData, function (data) {
+    elasticX.push(data.VARIABLE_NAME);
+    elasticY.push(+data.coefficient);
+  });
+  return [elasticX, elasticY];
+};
+
+let forestCsv = () => {
   d3.csv(forestData, function (data) {
     forestX.push(data.VARIABLE_NAME);
     forestY.push(+data.importance);
   });
+  return [forestX, forestY];
+};
 
-  return [xValues, yValues, elasticX, elasticY, forestX, forestY]
-}
-
-csvReader()
+lassoRegressionCsv();
+elasticnetCsv();
+forestCsv();
 
 export default class MajorResults extends React.Component {
   state = {
@@ -88,23 +98,29 @@ export default class MajorResults extends React.Component {
        }
   };
 
-  csvReader = () => {
+  lassoRegressionCsv = () => {
     d3.csv(data, function (data) {
       xValues.push(data.VARIABLE_NAME);
       yValues.push(+data.coefficient);
     });
     this.setState({ xValues, yValues });
-     d3.csv(data, function (data) {
-       elasticX.push(data.VARIABLE_NAME);
-       elasticY.push(+data.coefficient);
-     });
-    this.setState({ elasticX, elasticY });
-    d3.csv(forestData, function (data) {
-      forestX.push(data.VARIABLE_NAME);
-      forestY.push(+data.importance);
+  };
+
+  elasticnetCsv = () => {
+    d3.csv(data, function (data) {
+      elasticX.push(data.VARIABLE_NAME);
+      elasticY.push(+data.coefficient);
     });
-    this.setState({ forestX, forestY });
-  }
+    this.setState({ elasticX, elasticY });
+     };
+
+ forestCsv = () => {
+  d3.csv(forestData, function (data) {
+    forestX.push(data.VARIABLE_NAME);
+    forestY.push(+data.importance);
+  });
+  this.setState({ forestX, forestY })
+};
 
   render() {
     return (
@@ -166,9 +182,9 @@ export default class MajorResults extends React.Component {
                 </svg>
               </a>
             </h3>
-            <RandomForest
-              imgsrc={require("../assets/random_forest_summary_college_major_tree.png")}
-            ></RandomForest>
+            <RandomForestMajor
+              style={{ width: "100%", height: "100%" }}
+            ></RandomForestMajor>
             <div className="Plot">
               <Plot
                 data={this.state.randomForestData}
@@ -181,6 +197,45 @@ export default class MajorResults extends React.Component {
               />
             </div>
             <br></br>
+            {/* <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col">Topic</th>
+                  <th scope="col">Model</th>
+                  <th scope="col">Unoptimized Model Score</th>
+                  <th scope="col">RFE Score</th>
+                  <th scope="col">Optimum Model Score</th>
+                  <th scope="col">Features Remaining</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">College Major</th>
+                  <td>Random Forest Regression</td>
+                  <td>0.494</td>
+                  <td>n/a</td>
+                  <td>0.505</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <th scope="row">College Major</th>
+                  <td>Lasso Regression</td>
+                  <td>0.505</td>
+                  <td>0.45</td>
+                  <td>n/a</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <th scope="row">College Major</th>
+                  <td>Elastic Net Regression</td>
+                  <td>0.21</td>
+                  <td>0.364</td>
+                  <td>0.434</td>
+                  <td>30</td>
+                </tr>
+              </tbody>
+            </table> */}
+
             <div className="row">
               <Plot
                 className="col"

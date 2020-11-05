@@ -1,5 +1,5 @@
 import React from "react"
-import RandomForest from "./RandomForest.js"
+import RandomForestDebt from "./RandomForestDebt.js"
 
 import * as d3 from "d3"
 
@@ -24,23 +24,34 @@ let elasticY = []
 let forestX = []
 let forestY = []
 
-let csvReader = () => {
+let lassoRegressionCsv = () => {
   d3.csv(data, function (data) {
-    xValues.push(data.VARIABLE_NAME);
-    yValues.push(+data.coefficient);
-  });
-  d3.csv(elasticData, function (data) {
-    elasticX.push(data.VARIABLE_NAME);
-    elasticY.push(+data.coefficient);
-  });
-  d3.csv(forestData, function (data) {
-    forestX.push(data.VARIABLE_NAME);
-    forestY.push(+data.importance);
-  });
-  return [xValues, yValues, elasticX, elasticY, forestX, forestY];
-};
+    xValues.push(data.VARIABLE_NAME)
+    yValues.push(+data.coefficient)
+  })
+  return [xValues, yValues]
+}
 
-csvReader();
+let elasticnetCsv = () => {
+  d3.csv(elasticData, function (data) {
+    elasticX.push(data.VARIABLE_NAME)
+    elasticY.push(+data.coefficient)
+  })
+  return [elasticX, elasticY]
+}
+
+let forestCsv = () => {
+  d3.csv(forestData, function (data) {
+    forestX.push(data.VARIABLE_NAME)
+    forestY.push(+data.importance)
+  })
+  return [forestX, forestY]
+}
+
+lassoRegressionCsv()
+elasticnetCsv()
+forestCsv()
+
 export default class DebtResults extends React.Component {
 
 
@@ -175,9 +186,9 @@ export default class DebtResults extends React.Component {
                 </svg>
               </a>
             </h3>
-            <RandomForest
-              imgsrc={require("../assets/random_forest_summary_debt_tree.png")}
-            ></RandomForest>
+            <RandomForestDebt
+              style={{ width: "100%", height: "100%" }}
+            ></RandomForestDebt>
             <div className="Plot">
               <Plot
                 className="Plot"
