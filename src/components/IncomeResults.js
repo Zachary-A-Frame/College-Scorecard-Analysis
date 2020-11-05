@@ -20,25 +20,20 @@ let yValues = []
 let elasticX = []
 let elasticY = []
 
-let incomeRegressionCsv = () => {
-     d3.csv(data, function (data) {
-          xValues.push(data.VARIABLE_NAME)
-          yValues.push(+data.coefficient)
-     })
-     return [xValues, yValues]
-};
-
-let elasticnetCsv = () => {
+let csvReader = () => {
+  d3.csv(data, function (data) {
+    xValues.push(data.VARIABLE_NAME);
+    yValues.push(+data.coefficient);
+  });
   d3.csv(elasticData, function (data) {
     elasticX.push(data.VARIABLE_NAME);
     elasticY.push(+data.coefficient);
   });
-  return [elasticX, elasticY];
+
+  return [xValues, yValues, elasticX, elasticY];
 };
 
-incomeRegressionCsv()
-elasticnetCsv()
-
+csvReader();
 
 export default class Income extends React.Component {
      state = {
@@ -148,7 +143,7 @@ export default class Income extends React.Component {
               </a>
             </h3>
             <RandomForest
-              style={{ width: "100%", height: "100%" }}
+              imgsrc={require("../assets/random_forest_summary_earnings_tree.png")}
             ></RandomForest>
             <div className="Plot">
               <Plot
