@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.69058deb.chunk.css",
-    "main.js": "/static/js/main.acd973aa.chunk.js",
-    "main.js.map": "/static/js/main.acd973aa.chunk.js.map",
+    "main.js": "/static/js/main.5358c10e.chunk.js",
+    "main.js.map": "/static/js/main.5358c10e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4470b636.js",
     "runtime-main.js.map": "/static/js/runtime-main.4470b636.js.map",
-    "static/js/2.3e86e204.chunk.js": "/static/js/2.3e86e204.chunk.js",
-    "static/js/2.3e86e204.chunk.js.map": "/static/js/2.3e86e204.chunk.js.map",
+    "static/js/2.deda2656.chunk.js": "/static/js/2.deda2656.chunk.js",
+    "static/js/2.deda2656.chunk.js.map": "/static/js/2.deda2656.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.615557d29679d137ead5c18956e3b543.js": "/precache-manifest.615557d29679d137ead5c18956e3b543.js",
+    "precache-manifest.64ea3e4163cb038f657cd7e678e31112.js": "/precache-manifest.64ea3e4163cb038f657cd7e678e31112.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.69058deb.chunk.css.map": "/static/css/main.69058deb.chunk.css.map",
-    "static/js/2.3e86e204.chunk.js.LICENSE.txt": "/static/js/2.3e86e204.chunk.js.LICENSE.txt",
+    "static/js/2.deda2656.chunk.js.LICENSE.txt": "/static/js/2.deda2656.chunk.js.LICENSE.txt",
     "static/media/confusion-matrix-2.png": "/static/media/confusion-matrix-2.0a3795f0.png",
     "static/media/confusion-matrix.png": "/static/media/confusion-matrix.53e62934.png",
     "static/media/earnings_tuition.png": "/static/media/earnings_tuition.bfb6473e.png",
@@ -21,7 +21,6 @@
     "static/media/lasso_results_sorted_debt_df.csv": "/static/media/lasso_results_sorted_debt_df.ca12e36d.csv",
     "static/media/lasso_results_sorted_earnings_df.csv": "/static/media/lasso_results_sorted_earnings_df.dbe2ceb3.csv",
     "static/media/lasso_results_sorted_majors_df.csv": "/static/media/lasso_results_sorted_majors_df.ded5cfa1.csv",
-    "static/media/loading-animation.gif": "/static/media/loading-animation.0d7bc8dd.gif",
     "static/media/ml-mapOnHomepage.png": "/static/media/ml-mapOnHomepage.d8d479d5.png",
     "static/media/random_forest_debt_summary_table.csv": "/static/media/random_forest_debt_summary_table.ecef6b08.csv",
     "static/media/random_forest_major_earnings_summary_table.csv": "/static/media/random_forest_major_earnings_summary_table.26c53201.csv",
@@ -33,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4470b636.js",
-    "static/js/2.3e86e204.chunk.js",
+    "static/js/2.deda2656.chunk.js",
     "static/css/main.69058deb.chunk.css",
-    "static/js/main.acd973aa.chunk.js"
+    "static/js/main.5358c10e.chunk.js"
   ]
 }
