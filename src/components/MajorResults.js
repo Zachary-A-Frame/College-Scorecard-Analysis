@@ -118,36 +118,13 @@ export default class MajorResults extends React.Component {
               Factors that determine the highest income based on Major
               selection:
             </h2>
-            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
-              Do Major In:
-            </h3>
-            <ul>
-              <li>Engineering</li>
-              <li>Health Sciences</li>
-              <li>Social Sciences</li>
-              <li>Mathematics</li>
-              <li>Statistics</li>
-              <li>Transportation</li>
-            </ul>
-            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
-              Don't Major In:{" "}
-            </h3>
-            <ul>
-              <li>Construction</li>
-              <li>Public Administration</li>
-              <li>Parks and Recreation</li>
-              <li>Theology</li>
-              <li>Eduction</li>
-              <li>Law Enforcement</li>
-            </ul>
             <h3 className="option__text" style={{ textAlign: "center" }}>
               <a
                 href="https://zachary-a-frame.github.io/College-Scorecard-Analysis/static/media/random_forest_summary_college_major_tree.85810e62.png"
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                Random Forest College Major Tree{" "}
-                <Zoom />
+                Random Forest College Major Tree <Zoom />
               </a>
             </h3>
             <RandomForest
@@ -201,6 +178,28 @@ export default class MajorResults extends React.Component {
                 }}
               />
             </div>
+            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
+              Do Major In:
+            </h3>
+            <ul>
+              <li>Engineering</li>
+              <li>Health Sciences</li>
+              <li>Social Sciences</li>
+              <li>Mathematics</li>
+              <li>Statistics</li>
+              <li>Transportation</li>
+            </ul>
+            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
+              Don't Major In:{" "}
+            </h3>
+            <ul>
+              <li>Construction</li>
+              <li>Public Administration</li>
+              <li>Parks and Recreation</li>
+              <li>Theology</li>
+              <li>Eduction</li>
+              <li>Law Enforcement</li>
+            </ul>
           </div>
         </div>
       </div>

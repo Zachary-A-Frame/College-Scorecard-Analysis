@@ -84,37 +84,17 @@ export default class Income extends React.Component {
               Factors that determine the highest income 6 years after enrollment
               in college:{" "}
             </h2>
-            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
-              Do:{" "}
-            </h3>
-            <ul>
-              <li>
-                Major in Engineering, Health Professions, Transporation And
-                Materials Moving, Mechanic
-              </li>
-              <li>Go to College that spends heavily on faculty salaries</li>
-              <li>
-                Go to college that has high instructional expenditures per full
-                time students
-              </li>
-              <li>Come from a family with a family income over $110,000</li>
-            </ul>
-            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
-              Don't:{" "}
-            </h3>
-            <ul>
-              <li>Withdrawal from college after 2 years</li>
-              <li>
-                Don't major in Visual & Performing Arts, Natural Resources and
-                Conservation
-              </li>
-              <li>Don't come from a family that makes $30,000/year</li>
-            </ul>
-            <h3 style={{ textAlign: "center" }}>
-              Simple Linear Regression Model between earnings and tuition to
-              determine if a relation exists:
-            </h3>
-            <MeanEarnings className="visualizations"></MeanEarnings>
+            <div style={{ textAlign: "center" }}>
+              <a
+                href="https://zachary-a-frame.github.io/College-Scorecard-Analysis/static/media/earnings_tuition.bfb6473e.png"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                {" "}
+                Mean Earnings After 6 Years From Enrollment <Zoom />
+                <MeanEarnings className="visualizations"></MeanEarnings>
+              </a>
+            </div>
             <hr></hr>
             <h3 className="option__text" style={{ textAlign: "center" }}>
               <a
@@ -122,8 +102,7 @@ export default class Income extends React.Component {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                Random Forest Earnings Tree{" "}
-                <Zoom />
+                Random Forest Earnings Tree <Zoom />
               </a>
             </h3>
             <RandomForest
@@ -213,6 +192,32 @@ export default class Income extends React.Component {
                 }}
               />
             </div>
+            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
+              Do:{" "}
+            </h3>
+            <ul>
+              <li>
+                Major in Engineering, Health Professions, Transporation And
+                Materials Moving, Mechanic
+              </li>
+              <li>Go to College that spends heavily on faculty salaries</li>
+              <li>
+                Go to college that has high instructional expenditures per full
+                time students
+              </li>
+              <li>Come from a family with a family income over $110,000</li>
+            </ul>
+            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
+              Don't:{" "}
+            </h3>
+            <ul>
+              <li>Withdrawal from college after 2 years</li>
+              <li>
+                Don't major in Visual & Performing Arts, Natural Resources and
+                Conservation
+              </li>
+              <li>Don't come from a family that makes $30,000/year</li>
+            </ul>
           </div>
         </div>
       </div>

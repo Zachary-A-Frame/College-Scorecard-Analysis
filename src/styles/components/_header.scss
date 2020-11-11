@@ -1,11 +1,11 @@
 .header {
      margin: auto;
-     background: $off-black;
      color: white;
      margin-bottom: $m-size;
      padding: $m-size 0;
      background-image: url(https://images.forbes.com/Landers/Images/Desktop/Leadership/Leadership_Education.png);
      color: black;
+     background-size: 100% auto;
 }
 
 .header__title {
@@ -22,9 +22,6 @@
      margin: 0;
 }
 
-.header__subtitle::selection {
-     background-color: $purple;
-}
 
 @media (min-width: $desktop-breakpoint) {
      .header {

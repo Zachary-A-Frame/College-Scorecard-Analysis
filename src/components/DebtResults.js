@@ -131,31 +131,13 @@ export default class DebtResults extends React.Component {
               Factors that determine the highest amount of Debt after enrolling
               in college:
             </h2>
-            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
-              Do:{" "}
-            </h3>
-            <ul>
-              <li>Major in Architecture</li>
-              <li>Go to a school with large tuition</li>
-              <li>Take 8 years to graduate</li>
-              <li>Withdraw within 8 years</li>
-            </ul>
-            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
-              Don't:{" "}
-            </h3>
-            <ul>
-              <li>Withdraw within 2 years</li>
-              <li>Major in Ethnic, Cultural, Gender, And Group Studies.</li>
-              <li>Major in Multi/Interdisciplinary Studies.</li>
-            </ul>
             <h3 className="option__text" style={{ textAlign: "center" }}>
               <a
                 href="https://zachary-a-frame.github.io/College-Scorecard-Analysis/static/media/random_forest_summary_debt_tree.8ddc8df4.png"
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                Random Forest Debt Tree{" "}
-                <Zoom />
+                Random Forest Debt Tree <Zoom />
               </a>
             </h3>
             <RandomForest
@@ -210,6 +192,23 @@ export default class DebtResults extends React.Component {
                 }}
               />
             </div>
+            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
+              If you're concerned about debt, don't:{" "}
+            </h3>
+            <ul>
+              <li>Major in Architecture</li>
+              <li>Go to a school with large tuition</li>
+              <li>Take 8 years to graduate</li>
+              <li>Withdraw within 8 years</li>
+            </ul>
+            <h3 style={{ textAlign: "center", textDecoration: "underline" }}>
+              Do:{" "}
+            </h3>
+            <ul>
+              <li>Withdraw within 2 years (If you're unsure of completion)</li>
+              <li>Attend a University with high instructional expenditures per student.</li>
+              <li>Major in Multi/Interdisciplinary Studies.</li>
+            </ul>
           </div>
         </div>
       </div>

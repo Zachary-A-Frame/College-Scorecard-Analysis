@@ -5,7 +5,6 @@ import "./styles/styles.scss"
 import Header from "./components/Header"
 import Navbar from "./components/Navbar"
 import LandingPage from "./components/LandingPage"
-import Visualizations from "./components/Visualizations"
 import MeanEarnings from "./components/MeanEarnings.js"
 import RandomForest from "./components/RandomForest.js"
 import IncomeResults from "./components/IncomeResults.js"
@@ -35,11 +34,6 @@ function App() {
             path={`${process.env.PUBLIC_URL}/`}
             component={LandingPage}
             exact
-          />
-          {/* <Route path={`${process.env.PUBLIC_URL}/Main`} component={LandingPage} /> */}
-          <Route
-            path={`${process.env.PUBLIC_URL}/visualizations`}
-            component={Visualizations}
           />
           <Route path={`${process.env.PUBLIC_URL}/Data`} component={Data} />
           <Route
