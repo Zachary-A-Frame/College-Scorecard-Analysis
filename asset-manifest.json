@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.8807ca09.chunk.css",
+    "main.css": "/static/css/main.8a1673d8.chunk.css",
     "main.js": "/static/js/main.821efdee.chunk.js",
     "main.js.map": "/static/js/main.821efdee.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4470b636.js",
@@ -8,9 +8,9 @@
     "static/js/2.96f77e8a.chunk.js": "/static/js/2.96f77e8a.chunk.js",
     "static/js/2.96f77e8a.chunk.js.map": "/static/js/2.96f77e8a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b2e5edb53720efe5d43e61a0fb29a463.js": "/precache-manifest.b2e5edb53720efe5d43e61a0fb29a463.js",
+    "precache-manifest.aab528f00a0c6ac9bb19fcded6c70787.js": "/precache-manifest.aab528f00a0c6ac9bb19fcded6c70787.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.8807ca09.chunk.css.map": "/static/css/main.8807ca09.chunk.css.map",
+    "static/css/main.8a1673d8.chunk.css.map": "/static/css/main.8a1673d8.chunk.css.map",
     "static/js/2.96f77e8a.chunk.js.LICENSE.txt": "/static/js/2.96f77e8a.chunk.js.LICENSE.txt",
     "static/media/confusion-matrix-2.png": "/static/media/confusion-matrix-2.0a3795f0.png",
     "static/media/confusion-matrix.png": "/static/media/confusion-matrix.53e62934.png",
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.4470b636.js",
     "static/js/2.96f77e8a.chunk.js",
-    "static/css/main.8807ca09.chunk.css",
+    "static/css/main.8a1673d8.chunk.css",
     "static/js/main.821efdee.chunk.js"
   ]
 }
