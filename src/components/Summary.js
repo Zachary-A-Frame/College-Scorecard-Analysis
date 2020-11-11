@@ -54,7 +54,7 @@ const Header = (props) => (
           className="image-fluid"
         />
       </a>
-      <div className="option" style={{ marginTop: "50px"}}>
+      <div className="option" style={{ marginTop: "50px", marginBottom: "100px" }}>
         <h2 className="title">Model Methodology</h2>
         <p>
           When determining the top earnings after 6 years of enrollment, top

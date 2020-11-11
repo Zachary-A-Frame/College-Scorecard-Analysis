@@ -7,14 +7,66 @@ export default class Navbar extends React.Component {
     return (
       <nav>
         <div className="sidenav">
-          <Link to={`${process.env.PUBLIC_URL}/`}>Home</Link>
-          <Link to={`${process.env.PUBLIC_URL}/Income`}>Income Results</Link>
-          <Link to={`${process.env.PUBLIC_URL}/Major`}>Major Results</Link>
-          <Link to={`${process.env.PUBLIC_URL}/Debt`}>Debt Results</Link>
-          <Link to={`${process.env.PUBLIC_URL}/ForbesRanking`}>
-            Forbes Ranking Results
-          </Link>
-          <Link to={`${process.env.PUBLIC_URL}/Data`}>Data</Link>
+          <div>
+            <Link to={`${process.env.PUBLIC_URL}/`}>
+              <img
+                src={require("../assets/home.svg")}
+                style={{ width: "20%" }}
+                alt="home img"
+              />
+              &nbsp;&nbsp; Home
+            </Link>
+          </div>
+          <div>
+            <Link to={`${process.env.PUBLIC_URL}/Income`}>
+              <img
+                src={require("../assets/money.svg")}
+                style={{ width: "20%" }}
+                alt="home img"
+              />
+              &nbsp;&nbsp; Income Results
+            </Link>
+          </div>
+          <div>
+            <Link to={`${process.env.PUBLIC_URL}/Major`}>
+              <img
+                src={require("../assets/library.svg")}
+                style={{ width: "20%" }}
+                alt="home img"
+              />
+              &nbsp;&nbsp; Major Results
+            </Link>
+          </div>
+          <div>
+            <Link to={`${process.env.PUBLIC_URL}/Debt`}>
+              <img
+                src={require("../assets/wallet.svg")}
+                style={{ width: "20%" }}
+                alt="home img"
+              />
+              &nbsp;&nbsp; Debt Results
+            </Link>
+          </div>
+          <div>
+            <Link to={`${process.env.PUBLIC_URL}/ForbesRanking`}>
+              <img
+                src={require("../assets/forbes-logo.jpg")}
+                style={{ width: "20%" }}
+                alt="home img"
+              />
+              &nbsp;&nbsp; Forbes Results
+            </Link>
+          </div>
+          <div>
+            <Link to={`${process.env.PUBLIC_URL}/Data`}>
+              <img
+                src={require("../assets/document.svg")}
+                style={{ width: "20%" }}
+                alt="home img"
+              />
+              &nbsp;&nbsp; Data
+            </Link>
+          </div>
         </div>
       </nav>
     );

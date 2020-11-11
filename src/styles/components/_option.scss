@@ -11,9 +11,8 @@
 }
 
 .title {
-     background: #a51c30;
+     background-image: linear-gradient(#a51c30, #a51c30 - 70%);
      border: none;
-     border-bottom: .6rem solid darken(#a51c30, 10%);
      // color: white;
      font-weight: bold;
      font-size: $l-size;
