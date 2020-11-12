@@ -167,7 +167,8 @@ export default class ForbesRanking extends React.Component {
               </tbody>
             </table>
             <div>
-              <p style={{ marginLeft: "65%" }}>Random Forest</p>
+              <p style={{ marginLeft: "17.5%", float: "left" }}>Neural Network</p>
+              <p style={{ marginRight: "20%", float: "right" }}>Random Forest</p>
               <img
                 src={require("../assets/confusion-matrix.png")}
                 alt="random_forest_summary"
