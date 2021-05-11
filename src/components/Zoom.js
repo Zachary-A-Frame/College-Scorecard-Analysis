@@ -1,6 +1,6 @@
 import React from "react"
 
-function Zoom() {
+const Zoom = () => {
      return (
      <svg
        width="1em"
