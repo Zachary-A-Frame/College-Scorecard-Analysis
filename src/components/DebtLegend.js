@@ -1,7 +1,8 @@
 import React from "react";
 
-export default class DebtLegend extends React.Component {
-  render() {
+
+const DebtLegend = () => {
+
     return (
       <div>
         <div className="legend">
@@ -87,5 +88,6 @@ export default class DebtLegend extends React.Component {
         </div>
       </div>
     );
-  }
 }
+
+export default DebtLegend

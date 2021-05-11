@@ -16,7 +16,7 @@ import Data from "./components/Data";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
-function App() {
+const App = () => {
   const subtitle = "By Andrew Addie, Matt Moormeier, and Zach Frame"
 
   return (

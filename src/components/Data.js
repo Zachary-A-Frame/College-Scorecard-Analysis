@@ -4,7 +4,7 @@ import { collegeListData } from "../Resources/collegeListData"
 import { ColumnHeadings } from "../Resources/ColumnHeadings.js"
 import LoadingScreen from "./Loading";
 
-function Data() {
+const Data = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
